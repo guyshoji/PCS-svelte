@@ -14,7 +14,7 @@ export default {
 		forms,
 		typography,
 		skeleton({
-			themes: { preset: ["crimson"] }
+			themes: { preset: ["gold-nouveau"] }
 		})
 		
 	],
