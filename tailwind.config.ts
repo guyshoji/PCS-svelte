@@ -14,14 +14,8 @@ export default {
 		forms,
 		typography,
 		skeleton({
-			themes: {
-				preset: [
-					{
-						name: 'hamlindigo',
-						enhancements: true,
-					},
-				],
-			},
-		}),
+			themes: { preset: ["gold-nouveau"] }
+		})
+		
 	],
 } satisfies Config;

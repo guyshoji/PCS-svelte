@@ -89,6 +89,7 @@
 		<div class="w-fit font-semibold flex flex-col p-3">
 			<a class="hover:font-normal p-3" href="/about"> <p>About Us</p></a>
 			<a class="hover:font-normal p-3" href="/projects"> <p>Projects</p></a>
+			<a class="hover:font-normal p-3" href="/members"> <p>Members</p></a>
 			<a class="hover:font-normal p-3" href="/editorials"> <p>Editorials</p></a>
 			<a class="hover:font-normal p-3" href="/calendar"> <p>Calendar</p></a>
 			<a
