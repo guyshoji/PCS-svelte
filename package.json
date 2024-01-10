@@ -36,6 +36,7 @@
   "dependencies": {
     "@floating-ui/dom": "1.5.4",
     "@iconify/svelte": "^3.1.6",
+    "@sveltejs/adapter-vercel": "^4.0.4",
     "@threlte/core": "^7.0.12",
     "@threlte/extras": "^8.1.1",
     "svelte-typewriter": "^3.2.3",
