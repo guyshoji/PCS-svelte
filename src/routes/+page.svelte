@@ -18,11 +18,11 @@
 			<Scene />
 		</Canvas>
 	</div>
-	<div class="typewriter pointer-events-none select-none">
+	<div class="typewriter pointer-events-none select-none flex flex-col bg-primary-700 gap-2 p-10 bg-opacity-30">
 		<h1 class="text-7xl font-bold">Politcal Computer Science Berkeley:</h1>
 		<Typewriter mode={'loopOnce'} interval={50}>
 			{#each platitudes as platitude}
-				<h1 class=" text-primary-500 font-bold text-lg">{platitude}</h1>
+				<h1 class=" text-primary-500 font-bold text-lg drop-shadow-xl">{platitude}</h1>
 			{/each}
 		</Typewriter>
 		<a
@@ -43,7 +43,6 @@
 
 	.typewriter {
 		margin: 0;
-		padding: 0;
 		position: absolute;
 		top: 50%;
 		left: 50%;

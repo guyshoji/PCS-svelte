@@ -8,6 +8,9 @@ dependencies:
   '@floating-ui/dom':
     specifier: 1.5.4
     version: 1.5.4
+  '@fortawesome/free-solid-svg-icons':
+    specifier: ^6.5.1
+    version: 6.5.1
   '@iconify/svelte':
     specifier: ^3.1.6
     version: 3.1.6(svelte@4.2.8)
@@ -70,6 +73,9 @@ devDependencies:
   svelte-check:
     specifier: ^3.6.0
     version: 3.6.2(postcss@8.4.33)(svelte@4.2.8)
+  svelte-fa:
+    specifier: ^4.0.1
+    version: 4.0.1(svelte@4.2.8)
   tailwindcss:
     specifier: 3.4.1
     version: 3.4.1
@@ -320,6 +326,20 @@ packages:
       '@formatjs/ecma402-abstract': 1.18.0
       '@formatjs/intl-localematcher': 0.5.2
       tslib: 2.6.2
+    dev: false
+
+  /@fortawesome/fontawesome-common-types@6.5.1:
+    resolution: {integrity: sha512-GkWzv+L6d2bI5f/Vk6ikJ9xtl7dfXtoRu3YGE6nq0p/FFqA1ebMOAWg3XgRyb0I6LYyYkiAo+3/KrwuBp8xG7A==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
+
+  /@fortawesome/free-solid-svg-icons@6.5.1:
+    resolution: {integrity: sha512-S1PPfU3mIJa59biTtXJz1oI0+KAXW6bkAb31XKhxdxtuXDiUIFsih4JR1v5BbxY7hVHsD1RKq+jRkVRaf773NQ==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.5.1
     dev: false
 
   /@iconify/svelte@3.1.6(svelte@4.2.8):
@@ -1952,6 +1972,14 @@ packages:
       - sass
       - stylus
       - sugarss
+    dev: true
+
+  /svelte-fa@4.0.1(svelte@4.2.8):
+    resolution: {integrity: sha512-+9+h2A6+pLdPW/vJNr1RhhQGKHlbtJD0dm+IabShawH3XNVUwlxH+Euet6HKR47DtNeqzDndD/xySrUVLVaEzQ==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.8
     dev: true
 
   /svelte-hmr@0.15.3(svelte@4.2.8):
