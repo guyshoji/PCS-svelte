@@ -12,14 +12,24 @@ export default {
 	],
 	theme: {
 		extend: {
-
+			backgroundColor: {
+				primary: '#7749cd'
+			},
+			textColor: {
+				primary: '#7749cd'
+			},
+			color: {
+				primary: '#7749cd'
+			}
 		}
 	},
 	plugins: [
 		forms,
 		typography,
 		skeleton({
-			themes: { preset: ['gold-nouveau'] }
+			themes: {
+				preset: ['skeleton']
+			}
 		})
 	]
 } satisfies Config;
