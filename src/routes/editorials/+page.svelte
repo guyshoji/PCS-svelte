@@ -30,15 +30,19 @@
 {:else}
 	<!-- Once isLoading is false, render the articles -->
 	<div class="h-full flex flex-col">
-		<h1 class="text-l dark:text-white font-bold text-center m-3">Here is a collection of medium articles we have published on medium!</h1>
+		<h1 class="text-l dark:text-white font-bold text-center m-3">
+			Here is a collection of medium articles we have published on medium!
+		</h1>
 
 		{#each articles as article}
 			<a class="card m-3 p-3" href={article.link}>
-        <header>
-{article.thumbnail}
-        </header>
+				<header>
+					{article.thumbnail}
+				</header>
 				<h2 class="text-xl dark:text-white font-bold">{article.title}</h2>
-				<h3 class="line-clamp-3 dark:text-white p-3 overflow-hidden">{@html article.description}</h3>
+				<h3 class="line-clamp-4 dark:text-white p-3 overflow-hidden">
+					{@html article.description}
+				</h3>
 			</a>
 		{/each}
 	</div>

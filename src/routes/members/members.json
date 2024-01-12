@@ -3,63 +3,90 @@
         "name": "Miller Jaquet",
         "title": "President",
         "linkedin": "https://www.linkedin.com/in/miller-jaquet/",
-        "img": "",
-        "imgSilly": ""
+        "img": "/pcs-logo.png",
+        "imgSilly": "/group-pic.jpeg",
+        "major": "",
+        "graduation": ""
     },
     {
         "name": "Rohit Jha",
         "title": "External Vice President",
         "linkedin": "https://www.linkedin.com/in/rohitjha2003/",
-        "img": "",
-        "imgSilly": ""
+        "img": "/pcs-logo.png",
+        "imgSilly": "/group-pic.jpeg",
+        "major": "",
+        "graduation": ""
     },
     {
         "name": "Iman Qureshi",
         "title": "Internal Vice President",
         "linkedin": "",
-        "img": "",
-        "imgSilly": ""
+        "img": "/pcs-logo.png",
+        "imgSilly": "/group-pic.jpeg",
+        "major": "",
+        "graduation": ""
     },
     {
         "name": "Carisma De Anda",
         "title": "Development Vice President",
         "linkedin": "",
-        "img": "",
-        "imgSilly": ""
+        "img": "/pcs-logo.png",
+        "imgSilly": "/group-pic.jpeg",
+        "major": "",
+        "graduation": ""
     },
     {
         "name": "Anya Danes",
         "title": "Recruitment & Retention Chair",
         "linkedin": "",
-        "img": "",
-        "imgSilly": ""
+        "img": "/pcs-logo.png",
+        "imgSilly": "/group-pic.jpeg",
+        "major": "",
+        "graduation": ""
     },
     {
         "name": "Gisele DeWitt",
         "title": "Social Chair",
         "linkedin": "",
-        "img": "",
-        "imgSilly": ""
+        "img": "/pcs-logo.png",
+        "imgSilly": "/group-pic.jpeg",
+        "major": "",
+        "graduation": ""
     },
     {
         "name": "Stephen Okita",
         "title": "Workshops Chair",
         "linkedin": "https://www.linkedin.com/in/stephen-okita-a9427b1b2/",
-        "imgs": "/Members/stephen-prof.jpeg",
-        "img": "/Members/stephen-silly.jpeg"
+        "img": "/Members/stephen-prof.jpg",
+        "imgSilly": "/Members/stephen-silly.jpg",
+        "major": "Philosophy & CS",
+        "graduation": "2027"
     },
     {
         "name": "Divit Chopra",
         "title": "Initiatives Chair",
         "linkedin": "",
-        "img": "",
-        "imgSilly": ""
+        "img": "/pcs-logo.png",
+        "imgSilly": "/group-pic.jpeg",
+        "major": "MET",
+        "graduation": "2027"
     },
     {
         "name": "Billy Perice",
         "title": "Member",
         "linkedin": "",
-        "img": "",
-        "imgSilly": ""
+        "img": "/pcs-logo.png",
+        "imgSilly": "/group-pic.jpeg",
+        "major": "",
+        "graduation": ""
+    },
+    {
+        "name": "Kailen Grottel-Brown",
+        "title": "Member",
+        "linkedin": "www.linkedin.com/in/kailen-gbrown",
+        "img": "/Members/kailen-prof.jpeg",
+        "imgSilly": "/Members/Kailen-silly.jpg",
+        "major": "Political Science, Public Policy (Minor)",
+        "graduation": "2025"
     }
 ]

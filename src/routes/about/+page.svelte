@@ -31,7 +31,7 @@
 	];
 </script>
 
-<div class="h-full flex ab flex-col px-1/4 py-1/4 mt-36">
+<div class="h-full flex ab flex-col px-1/4 py-1/4">
 	<Fade>
 		<div class="flex flex-col gap-7">
 			<!-- <img src="/group-pic.jpeg" class="m-auto absolute -z-10" /> -->
@@ -114,6 +114,14 @@
 		text-align: center;
 		font-weight: bold;
 	}
-	.tc {
+	@media (min-width: 580px) {
+		.ab {
+			margin-top: 3rem;
+		}
+	}
+	@media (min-width: 1080px) {
+		.ab {
+			margin-top: 15%
+		}
 	}
 </style>

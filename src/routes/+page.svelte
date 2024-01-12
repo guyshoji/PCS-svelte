@@ -23,7 +23,7 @@
 		class="typewriter pointer-events-none select-none flex flex-col bg-surface-700 gap-2 p-10 bg-opacity-30"
 	>
 		<Fade>
-			<h1 class="text-7xl dark:text-white font-bold">Politcal Computer Science Berkeley:</h1>
+			<h1 class="text-7xl dark:text-white font-bold">Political Computer Science Berkeley:</h1>
 			<Typewriter mode={'loopOnce'} interval={50}>
 				{#each platitudes as platitude}
 					<h1 class=" font-bold text-lg m-3 drop-shadow-xl">{platitude}</h1>
