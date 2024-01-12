@@ -45,8 +45,8 @@
         "name": "Stephen Okita",
         "title": "Workshops Chair",
         "linkedin": "https://www.linkedin.com/in/stephen-okita-a9427b1b2/",
-        "img": "/Members/stephen-prof.jpeg",
-        "imgSilly": "/Members/stephen-silly.jpeg"
+        "imgs": "/Members/stephen-prof.jpeg",
+        "img": "/Members/stephen-silly.jpeg"
     },
     {
         "name": "Divit Chopra",
