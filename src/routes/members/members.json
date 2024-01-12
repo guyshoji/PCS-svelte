@@ -2,57 +2,64 @@
     {
         "name": "Miller Jaquet",
         "title": "President",
-        "linkedin": "",
-        "img": ""
+        "linkedin": "https://www.linkedin.com/in/miller-jaquet/",
+        "img": "",
+        "imgSilly": ""
     },
     {
         "name": "Rohit Jha",
         "title": "External Vice President",
-        "linkedin": "",
-        "img": ""
+        "linkedin": "https://www.linkedin.com/in/rohitjha2003/",
+        "img": "",
+        "imgSilly": ""
     },
     {
         "name": "Iman Qureshi",
         "title": "Internal Vice President",
         "linkedin": "",
-        "img": ""
+        "img": "",
+        "imgSilly": ""
     },
     {
         "name": "Carisma De Anda",
         "title": "Development Vice President",
         "linkedin": "",
-        "img": ""
+        "img": "",
+        "imgSilly": ""
     },
     {
         "name": "Anya Danes",
         "title": "Recruitment & Retention Chair",
         "linkedin": "",
-        "img": ""
+        "img": "",
+        "imgSilly": ""
     },
     {
         "name": "Gisele DeWitt",
         "title": "Social Chair",
         "linkedin": "",
-        "img": ""
+        "img": "",
+        "imgSilly": ""
     },
     {
         "name": "Stephen Okita",
         "title": "Workshops Chair",
         "linkedin": "https://www.linkedin.com/in/stephen-okita-a9427b1b2/",
-        "img": "https://media.licdn.com/dms/image/C5603AQEoMsEyU4eDaw/profile-displayphoto-shrink_200_200/0/1630301687986?e=1710374400&v=beta&t=i5aFoyzGK7S6RCTYDZ12JDtM-fnzu9fQDkqD7CvbSIg"
+        "img": "/Members/stephen-prof.jpeg",
+        "imgSilly": "/Members/stephen-silly.jpeg"
     },
     {
         "name": "Divit Chopra",
         "title": "Initiatives Chair",
         "linkedin": "",
-        "img": ""
-    }, 
+        "img": "",
+        "imgSilly": ""
+    },
     {
         "name": "Billy Perice",
         "title": "Member",
         "linkedin": "",
-        "img": ""
+        "img": "",
+        "imgSilly": ""
     }
-
-
 ]

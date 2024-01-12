@@ -39,9 +39,9 @@
 	function triggerDrawer() {
 		drawerStrore.open(drawerSettings);
 	}
-	onMount(() => {
-		drawerStrore.open(drawerSettings);
-	});
+	// onMount(() => {
+	// 	drawerStrore.open(drawerSettings);
+	// });
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 	let currentTile: number = 0;
 
@@ -67,19 +67,17 @@
 				<a href="/" class="w-1/6 flex text-center content-center"
 					><img src="/pcs-logo.png" class="bg-white pcs-logo" alt="PCS Icon" />
 
-					<span class="text-xl font-semibold mx-4 m-auto">PCS@Berkeley</span>
+					<span class="text-xl dark:text-white font-semibold mx-4 m-auto">PCS@Berkeley</span>
 				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="default"></svelte:fragment>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
-				<button class="btn card-hover" on:click={a}><Icon icon="ion:language-outline" /></button>
-				<!-- <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> -->
-				<!-- <path d={languageSVG}></path> -->
-				<!-- </svg> -->
-
+				<button class="btn card-hover" on:click={a}
+					><Icon icon="ion:language-outline" class="dark:text-white" /></button
+				>
 				<button on:click={triggerDrawer}>
-					<Icon icon="material-symbols:density-medium-rounded" />
+					<Icon icon="material-symbols:density-medium-rounded" class="dark:text-white" />
 				</button>
 			</svelte:fragment>
 		</AppBar>
@@ -87,11 +85,11 @@
 	<!-- Page Route Content -->
 	<Drawer>
 		<div class="w-fit font-semibold flex flex-col p-3">
-			<a class="hover:font-normal p-3" href="/about"> <p>About Us</p></a>
-			<a class="hover:font-normal p-3" href="/projects"> <p>Projects</p></a>
-			<a class="hover:font-normal p-3" href="/members"> <p>Members</p></a>
-			<a class="hover:font-normal p-3" href="/editorials"> <p>Editorials</p></a>
-			<a class="hover:font-normal p-3" href="/calendar"> <p>Calendar</p></a>
+			<a class="hover:font-normal dark:text-white p-3" href="/about"> <p>About Us</p></a>
+			<a class="hover:font-normal dark:text-white p-3" href="/projects"> <p>Projects</p></a>
+			<a class="hover:font-normal dark:text-white p-3" href="/members"> <p>Members</p></a>
+			<a class="hover:font-normal dark:text-white p-3" href="/editorials"> <p>Editorials</p></a>
+			<a class="hover:font-normal dark:text-white p-3" href="/calendar"> <p>Calendar</p></a>
 			<a
 				class="btn variant-filled-primary"
 				href="https://docs.google.com/forms/d/e/1FAIpQLSdLTjL76KESHNkkE-H5BRoGimma8ja0H55lt1-8KsSIzirRdQ/viewform"
@@ -101,7 +99,7 @@
 	</Drawer>
 	<slot />
 	<svelte:fragment slot="footer">
-		<h1 class="text-right m-3">© PCS Berkeley 2023</h1>
+		<h1 class="text-right dark:text-white m-3">© PCS Berkeley 2023</h1>
 	</svelte:fragment>
 </AppShell>
 

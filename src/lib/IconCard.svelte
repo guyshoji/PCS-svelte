@@ -8,11 +8,11 @@
 </script>
 
 <div
-	class="flex flex-col gap-5 bg-primary-700 rounded-xl px-8 py-14 hover:bg-primary-900 items-start h-full flex-1 duration-300"
+	class="flex flex-col gap-5 bg-primary-700 rounded-xl p-8 hover:bg-primary-900 items-start h-full flex-1 duration-300"
 >
-	<div class="bg-secondary-700 rounded-md p-4">
-		<Fa class="h3 p-0 m-0" {icon} />
+	<div class="bg-secondary-700 m-auto rounded-md p-4">
+		<Fa class="h3 p-0 dark:text-white" {icon} />
 	</div>
 	<h1 class="h3 text-left font-bold">{header}</h1>
-	<h4 class="p text-left leading-7">{message}</h4>
+	<h4 class="p dark:text-white text-left leading-7">{message}</h4>
 </div>

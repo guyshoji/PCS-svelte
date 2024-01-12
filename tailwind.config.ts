@@ -10,19 +10,6 @@ export default {
 		'./src/**/*.{html,js,svelte,ts}',
 		join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')
 	],
-	theme: {
-		extend: {
-			backgroundColor: {
-				primary: '#7749cd'
-			},
-			textColor: {
-				primary: '#7749cd'
-			},
-			color: {
-				primary: '#7749cd'
-			}
-		}
-	},
 	plugins: [
 		forms,
 		typography,
