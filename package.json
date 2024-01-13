@@ -39,6 +39,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@iconify/svelte": "^3.1.6",
+    "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/adapter-vercel": "^4.0.4",
     "@threlte/core": "^7.0.12",
     "@threlte/extras": "^8.1.1",

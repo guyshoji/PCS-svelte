@@ -457,6 +457,7 @@ const css = {
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  const prerender = true;
   storePopup.set({
     computePosition,
     autoUpdate,
@@ -475,6 +476,8 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     offset,
     arrow
   });
+  if ($$props.prerender === void 0 && $$bindings.prerender && prerender !== void 0)
+    $$bindings.prerender(prerender);
   $$result.css.add(css);
   return `${$$result.head += `<!-- HEAD_svelte-293o2g_START --><!-- HTML_TAG_START -->${`<script>${autoModeWatcher.toString()} autoModeWatcher();<\/script>`}<!-- HTML_TAG_END --><!-- HEAD_svelte-293o2g_END -->`, ""}  ${validate_component(AppShell, "AppShell").$$render($$result, {}, {}, {
     footer: () => {
