@@ -6,6 +6,8 @@
 	export let fadeTime: number = 1000;
     export let classes: string = "";
 
+	visibleOnPageLoad = true;
+
 	import { onMount } from 'svelte';
 
 	if (visibleOnPageLoad) {
