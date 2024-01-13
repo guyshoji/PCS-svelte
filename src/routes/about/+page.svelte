@@ -3,6 +3,9 @@
 	import IconCard from '$lib/IconCard.svelte';
 	import { faComputer, faLandmark, faHandshake, faUser } from '@fortawesome/free-solid-svg-icons';
 	import Fade from '$lib/Fade.svelte';
+	import EventCard from '$lib/EventCard.svelte';
+	import Footer from '$lib/Footer.svelte';
+
 	let iconCards = [
 		{
 			icon: faLandmark,
@@ -29,14 +32,41 @@
 				"Political Computer Science hosts some of the most diverse, broad ranged in study, and interesting people you will ever meet. It's a great place to meet individuals you wouldn't always meet in your normal classes and have fun at social events."
 		}
 	];
+
+	let eventCards = [
+		{
+			img: "/meetings.png",
+			title: "General Meetings",
+			timeInfo: "Thursday 8 - 9 PM",
+			description: "At GMs we host discussions and debates about current events, often relating to AI and Tech Policy, have guest speaker presentations, and share project updates with the group"
+		},
+		{
+			img: "/project.png",
+			title: "Project Meetings",
+			timeInfo: "Weekly, varying by project",
+			description: "The time requirement, duration, locations, and agenda can vary from project to project. They are a great way to gain experience in technical work, research, or policy analysis!"
+		},
+		{
+			img: "/workshop.JPG",
+			title: "Development Workshops",
+			timeInfo: "2 - 3 / month, optional",
+			description: "We host a few workshops each month focusing on improving our members' skillsets, including resumé and career workshops, data science, web development, and much more!"
+		},
+		{
+			img: "/group-pic.jpeg",
+			title: "Socials",
+			timeInfo: "2 - 3 / month",
+			description: "Socials can vary in type, like watching debates together, hiking, biking, excursions, parties, and of course we have a retreat each semester!"
+		},
+	]
 </script>
 
-<div class="h-full flex ab flex-col px-1/4 py-1/4">
+<div class="flex ab flex-col px-10">
 	<Fade>
 		<div class="flex flex-col gap-7">
 			<!-- <img src="/group-pic.jpeg" class="m-auto absolute -z-10" /> -->
-			<h4 class="h4 dark:text-white color-primary-500 smallHeader">About Us</h4>
-			<h1 class="text-6xl dark:text-white text-center font-bold">Our Mission Statement</h1>
+			<h4 class="h4 text-primary-500 smallHeader">About Us</h4>
+			<h1 class="text-6xl text-center font-bold">Our Mission Statement</h1>
 			<div class="flex px-10">
 				<p class="h5 text-secondary-500 dark:text-secondary-100 leading-10 text-center">
 					Political Computer Science strives to better understand the intersection of policy and
@@ -48,65 +78,27 @@
 			</div>
 		</div>
 	</Fade>
-	<Fade>
-		<div class="mt-60 flex flex-col gap-16">
-			<h1 class=" h4 dark:text-white font-bold text-center text-2xl">A Space For Students to...</h1>
-			<div class="flex flex-row flex-wrap p-4 gap-20 text-center">
+	<Fade visibleOnPageLoad={false}>
+		<div class="mt-60 flex flex-col gap-10">
+			<h1 class="h4 text-primary-500 smallHeader">A Space For Students to...</h1>
+			<div class="cardsGrid p-4 gap-20 text-center">
 				{#each iconCards as { icon, header, message }}
 					<IconCard {icon} {header} {message} />
 				{/each}
 			</div>
 		</div>
 	</Fade>
-	<Fade>
-		<div class="mt-20 flex flex-col gap-16">
-			<h1 class=" h4 dark:text-white font-bold text-center text-2xl">Time Commitment</h1>
-			<div class="flex flex-row flex-wrap p-4 gap-20">
-				<div
-					class="flex flex-col gap-5 bg-primary-700 rounded-xl p-8 hover:bg-primary-900 items-start flex-1 duration-300"
-				>
-					<img src="/meetings.png" class="rounded-xl" />
-					<h2 class="h3 dark:text-white font-bold">Weekly General Meetings</h2>
-					<h3 class="">(Thursdays, 8-9 PM)</h3>
-					<li>discussions/debates about current events</li>
-					<li>guest speaker presentations</li>
-					<li>project updates</li>
-				</div>
-				<div
-					class="flex flex-col gap-5 bg-primary-700 rounded-xl p-8 hover:bg-primary-900 items-start flex-1 duration-300"
-				>
-					<img src="/project.png" class="rounded-xl" />
-					<h2 class="h3 dark:text-white font-bold">Weekly Project Meetings</h2>
-					<h3 class="">(varies by project)</h3>
-					<li>time, duration, location, and agenda set by your project manager(s)</li>
-					<li>changes per semester*</li>
-				</div>
-				<div
-					class="flex flex-col gap-5 bg-primary-700 rounded-xl p-8 hover:bg-primary-900 items-start flex-1 duration-300"
-				>
-					<img src="/workshop.JPG" class="rounded-xl" />
-					<h2 class="h3 dark:text-white font-bold">Development Workshops</h2>
-					<h3 class="">(optional but recomended)</h3>
-					<li>real world CS basics</li>
-					<li>data science</li>
-					<li>political science</li>
-					<li>résumés, internship search assistance</li>
-				</div>
-				<div
-					class="flex flex-col gap-5 bg-primary-700 rounded-xl p-8 hover:bg-primary-900 items-start flex-1 duration-300"
-				>
-					<img src="/group-pic.jpeg" class="rounded-xl" />
-					<h2 class="h3 dark:text-white font-bold">Socials</h2>
-					<h3 class="">(multiple times a year)</h3>
-					<li>introduction retreat</li>
-					<li>election/debate watch parties</li>
-					<li>hikes, biking, excursions</li>
-					<li>get together, parties</li>
-					<li>end of semester banquet</li>
-				</div>
-			</div>
+	<Fade visibleOnPageLoad={false}>
+		<div class="mt-48 flex flex-col gap-10">
+			<h1 class="h4 text-primary-500 smallHeader">Time Commitment</h1>
+			<div class="cardsGrid p-4 gap-20">
+				{#each eventCards as { img, title, timeInfo, description}}
+					<EventCard {img} {title} {timeInfo} {description} />
+				{/each}
+				
 		</div></Fade
 	>
+	<Footer />
 </div>
 
 <style>
@@ -121,7 +113,20 @@
 	}
 	@media (min-width: 1080px) {
 		.ab {
-			margin-top: 15%
+			margin-top: 15%;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		.cardsGrid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	@media (min-width: 1000px) {
+		.cardsGrid {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
 		}
 	}
 </style>

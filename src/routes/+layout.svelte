@@ -11,6 +11,8 @@
 		type AutocompleteOption
 	} from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
+	import { Canvas } from '@threlte/core';
+	import Scene from '$lib/SplashScene.svelte';
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
@@ -83,8 +85,10 @@
 		</AppBar>
 	</svelte:fragment>
 	<!-- Page Route Content -->
+
 	<Drawer>
 		<div class="w-fit font-semibold flex flex-col p-3">
+			<a class="hover:font-normal dark:text-white p-3" href="/"> <p>Home</p></a>
 			<a class="hover:font-normal dark:text-white p-3" href="/about"> <p>About Us</p></a>
 			<a class="hover:font-normal dark:text-white p-3" href="/projects"> <p>Projects</p></a>
 			<a class="hover:font-normal dark:text-white p-3" href="/members"> <p>Members</p></a>

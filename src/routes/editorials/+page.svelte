@@ -1,13 +1,24 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Loading from '$lib/Loading.svelte';
-	let articles = [];
+	import Footer from '$lib/Footer.svelte';
+
+	interface ArticleProps {
+		link: string;
+		title: string;
+		description: string;
+		thumbnail: string;
+	}
+
+	let articles: ArticleProps[] = [];
 	let isLoading: boolean = true; // Add a loading state
+	import Fade from '$lib/Fade.svelte';
+	import Article from '$lib/Article.svelte';
 
 	onMount(async () => {
 		try {
 			const response = await fetch(
-				'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/pcs-berkeley'
+				'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@pcsberkeley'
 			);
 			if (response.ok) {
 				const data = await response.json();
@@ -29,27 +40,46 @@
 	<Loading></Loading>
 {:else}
 	<!-- Once isLoading is false, render the articles -->
-	<div class="h-full flex flex-col">
-		<h1 class="text-l dark:text-white font-bold text-center m-3">
-			Here is a collection of medium articles we have published on medium!
-		</h1>
-
-		{#each articles as article}
-			<a class="card m-3 p-3" href={article.link}>
-				<header>
-					{article.thumbnail}
-				</header>
-				<h2 class="text-xl dark:text-white font-bold">{article.title}</h2>
+	<div class="w-full h-full flex flex-col justify-center items-center">
+		<Fade classes="flex flex-col gap-8 justify-center items-center w-3/4 text-center h-[90vh]">
+			<h4 class="h4 text-primary-500 smallHeader">Editorials</h4>
+			<h1 class="text-6xl font-bold">Our Medium</h1>
+			<h3 class="p pt-4 leading-10">
+				We publish a variety of different editorials recapping our projects and other experiences on
+				our club's Medium account! Feel free to read a few or visit online. We always love feedback
+				on what we write and hope we can keep you entertained!
+			</h3>
+			<a
+				href="https://medium.com/@pcsberkeley"
+				class="bg-primary-500 py-2 px-4 rounded-full hover:bg-primary-700 duration-200"
+				target="blank">Visit Our Medium!</a
+			>
+			<div class="w-1/6 bg-primary-500 h-0.5 mt-12"></div>
+		</Fade>
+		<Fade>
+			<h1 class="text-6xl font-bold">Articles</h1>
+		</Fade>
+		<div class="grid grid-cols-4 gap-10 p-14">
+			{#each articles as { title, description, link }}
+				<!--<a class="card m-3 p-3" href={article.link}>-->
+				<!--<h2 class="text-xl dark:text-white font-bold">{article.title}</h2>
 				<h3 class="line-clamp-4 dark:text-white p-3 overflow-hidden">
 					{@html article.description}
 				</h3>
-			</a>
-		{/each}
+			</a>-->
+				<Article {title} {description} {link}></Article>
+			{/each}
+		</div>
+		<Footer />
 	</div>
 {/if}
 
 <style>
-	img {
-		margin: 3rem;
+	.smallHeader {
+		text-align: center;
+		font-weight: bold;
+	}
+	.articleContainer {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 </style>

@@ -3,21 +3,49 @@
 	import members from './members.json';
 	import Fade from '$lib/Fade.svelte';
 	import Icon from '@iconify/svelte';
+	import Counter from '$lib/Counter.svelte';
+	import MemberCard from '$lib/MemberCard.svelte';
+	import Footer from '$lib/Footer.svelte';
 
 	// Function to change the image on hover
-	function setHoverImage(event, imgSilly) {
+	/*function setHoverImage(event, imgSilly) {
 		event.currentTarget.style.backgroundImage = `url(${imgSilly})`;
 	}
 
 	// Function to revert the image on mouse out
 	function setOriginalImage(event, img) {
 		event.currentTarget.style.backgroundImage = `url(${img})`;
-	}
+	}*/
 </script>
 
-<Fade>
-	<div class="ca grid grid-rows-3 m-3">
-		{#each members as person}
+<div class="w-full flex flex-col justify-center items-center gap-10">
+	<div class="w-full flex flex-row justify-between px-20">
+		<div class="w-full flex flex-col justify-center items-center gap-10 px-20">
+			<Fade>
+				<h1 class="h1 font-bold pt-20">OUR MEMBERS</h1>
+			</Fade>
+			<Fade>
+				<p class="text-center leading-9">
+					We're a bustling student-run organization who started in 2018 out of a passion for
+					interdisciplinary work, given Cal's rich history of political activism and current
+					dominance in the technology industries! We've since been home to over 100 members and are
+					so excited to welcome new faces each semester!
+				</p>
+			</Fade>
+			<div class="w-full flex statsContainer justify-between gap-10">
+				<Counter targetNum={70} countTime={3000} suffix="+">Alumni</Counter>
+				<Counter targetNum={45} countTime={2200} suffix="+">Active Members</Counter>
+				<Counter targetNum={13} countTime={2600} suffix="">Semesters</Counter>
+			</div>
+		</div>
+		<div class="w-full groupImg">
+			<img src="/group-pic.jpeg" alt="Retreat!" class="rounded-2xl w-full" />
+		</div>
+	</div>
+	<Fade visibleOnPageLoad={false}>
+		<h1 class="h1 font-bold pt-20">MEET OUR TEAM</h1>
+	</Fade>
+		<!--{#each members as person}
 			<div
 				class="c rounded border m-3 flex-col
 			 p-3 gap-2"
@@ -28,7 +56,7 @@
 					on:mouseover={(event) => setHoverImage(event, person.imgSilly)}
 					on:mouseout={(event) => setOriginalImage(event, person.img)}
 				></div>
-				<br>
+				<br />
 				<h1 class=" dark:text-white text-center font-bold h2">{person.name}</h1>
 				<h1 class="h4 dark:text-white text-center">{person.title}</h1>
 				<p class="dark:text-white text-center">
@@ -38,9 +66,14 @@
 					<Icon icon="mdi:linkedin" width="50" class="dark:text-white" />
 				</a>
 			</div>
-		{/each}
-	</div>
-</Fade>
+		{/each}-->
+		<div class="w-full grid ca gap-10 px-20">
+			{#each members as { name, linkedin, img, imgSilly, major, graduation, roles }}
+				<MemberCard {img} classYear={graduation} {linkedin} {major} {roles}>{name}</MemberCard>
+			{/each}
+		</div>
+</div>
+<Footer />
 
 <style>
 	.ca {
@@ -53,32 +86,59 @@
 			display: flex;
 			flex-direction: column;
 		}
+		.statsContainer {
+			flex-direction: column;
+		}
+		.groupImg {
+			display: none;
+		}
 	}
 
 	@media (min-width: 580px) {
 		.ca {
-			grid-template-columns: repeat(auto-fill, 50%);
+			grid-template-columns: repeat(2, 1fr);
+		}
+		.statsContainer {
+			flex-direction: column;
+		}
+		.groupImg {
+			display: none;
 		}
 	}
 	@media (min-width: 700px) {
 		.ca {
-			grid-template-columns: repeat(auto-fill, 50%);
+			grid-template-columns: repeat(2, 1fr);
+		}
+		.statsContainer {
+			flex-direction: column;
+		}
+		.groupImg {
+			display: none;
 		}
 	}
 
 	@media (min-width: 930px) {
 		.ca {
-			grid-template-columns: repeat(auto-fill, 33.33%);
+			grid-template-columns: repeat(3, 1fr);
+		}
+		.statsContainer {
+			flex-direction: row;
+		}
+		.groupImg {
+			display: none;
 		}
 	}
-	@media (min-width: 1200px) {
+	@media (min-width: 1300px) {
 		.ca {
-			grid-template-columns: repeat(auto-fill, 25%);
+			grid-template-columns: repeat(4, 1fr);
+		}
+		.groupImg {
+			display: block;
 		}
 	}
-	@media (min-width: 1380px) {
+	@media (min-width: 1600px) {
 		.ca {
-			grid-template-columns: repeat(auto-fill, 20%);
+			grid-template-columns: repeat(5, 1fr);
 		}
 	}
 </style>
