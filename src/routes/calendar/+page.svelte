@@ -4,9 +4,9 @@
 </script>
 
 <div class="h-full">
-	<div class="h-full flex flex-col justify-center items-center">
+	<div class="h-full flex flex-col justify-start items-center">
 		<Fade>
-			<div class="flex flex-col gap-7">
+			<div class="flex flex-col gap-7 pt-16">
 				<!-- <img src="/group-pic.jpeg" class="m-auto absolute -z-10" /> -->
 				<h1 class="text-6xl dark:text-white text-center font-bold">Calendar</h1>
 				<div class="my-10 m-auto">

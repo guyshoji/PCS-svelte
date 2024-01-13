@@ -25,7 +25,32 @@
 					transformPos = 0;
 				}
 			});
+			window.addEventListener('scroll', () => {
+				const el = document.getElementById('container');
+				const pos = el?.getBoundingClientRect().top;
+				if (pos && pos < 0.1) {
+					opacity = 1;
+					transformPos = 0;
+				}
+			});
+			window.addEventListener('wheel', () => {
+				const el = document.getElementById('container');
+				const pos = el?.scrollTop;
+				if (pos && pos < 0.1) {
+					opacity = 1;
+					transformPos = 0;
+				}
+			});
+			window.addEventListener('scroll', () => {
+				const el = document.getElementById('container');
+				const pos = el?.scrollTop;
+				if (pos && pos < 0.1) {
+					opacity = 1;
+					transformPos = 0;
+				}
+			});
 		});
+		
 	}
 </script>
 

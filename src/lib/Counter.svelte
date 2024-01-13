@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import Fade from './Fade.svelte';
 
-	export let classes: string = 'h1 font-bold text-primary-400';
+	export let classes: string = 'h1 font-bold text-primary-500';
 	export let startingNum: number = 0;
 	export let targetNum: number;
 	export let countTime: number = 3000;
@@ -29,7 +29,7 @@
 </script>
 
 <Fade>
-	<div class="flex flex-col gap-4 justify-center items-center">
+	<div class="flex flex-col gap-4 justify-center items-center text-center">
 		<h1 class={classes}>{displayedNum}{suffix}</h1>
 		<h2 class="h3"><slot /></h2>
 	</div>

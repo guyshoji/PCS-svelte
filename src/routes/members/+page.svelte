@@ -18,9 +18,9 @@
 	}*/
 </script>
 
-<div class="w-full flex flex-col justify-center items-center gap-10">
-	<div class="w-full flex flex-row justify-between px-20">
-		<div class="w-full flex flex-col justify-center items-center gap-10 px-20">
+<div class="w-full flex flex-col justify-start items-center gap-10">
+	<div class="w-full flex flex-row justify-between txt">
+		<div class="w-full flex flex-col justify-center items-center gap-10 txt text-center">
 			<Fade>
 				<h1 class="h1 font-bold pt-20">OUR MEMBERS</h1>
 			</Fade>
@@ -38,7 +38,7 @@
 				<Counter targetNum={13} countTime={2600} suffix="">Semesters</Counter>
 			</div>
 		</div>
-		<div class="w-full groupImg">
+		<div class="w-full pt-20 groupImg">
 			<img src="/group-pic.jpeg" alt="Retreat!" class="rounded-2xl w-full" />
 		</div>
 	</div>
@@ -92,6 +92,10 @@
 		.groupImg {
 			display: none;
 		}
+		.txt {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
 	}
 
 	@media (min-width: 580px) {
@@ -104,6 +108,10 @@
 		.groupImg {
 			display: none;
 		}
+		.txt {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
 	}
 	@media (min-width: 700px) {
 		.ca {
@@ -114,6 +122,10 @@
 		}
 		.groupImg {
 			display: none;
+		}
+		.txt {
+			padding-left: 5rem;
+			padding-right: 5rem;
 		}
 	}
 
@@ -127,6 +139,10 @@
 		.groupImg {
 			display: none;
 		}
+		.txt {
+			padding-left: 8rem;
+			padding-right: 8rem;
+		}
 	}
 	@media (min-width: 1300px) {
 		.ca {
@@ -135,10 +151,18 @@
 		.groupImg {
 			display: block;
 		}
+		.txt {
+			padding-left: 8rem;
+			padding-right: 8rem;
+		}
 	}
 	@media (min-width: 1600px) {
 		.ca {
 			grid-template-columns: repeat(5, 1fr);
+		}
+		.txt {
+			padding-left: 8rem;
+			padding-right: 8rem;
 		}
 	}
 </style>

@@ -22,7 +22,7 @@ export const pcsTheme: CustomThemeConfig = {
 		"--on-surface": "255 255 255",
 		// =~= Theme Colors  =~=
 		// primary | #a356f0 
-		"--color-primary-50": "241 230 253", // #f1e6fd
+		"--color-primary-50": "255 250 255", // #f1e6fd
 		"--color-primary-100": "237 221 252", // #edddfc
 		"--color-primary-200": "232 213 251", // #e8d5fb
 		"--color-primary-300": "218 187 249", // #dabbf9
@@ -88,13 +88,13 @@ export const pcsTheme: CustomThemeConfig = {
 		"--color-error-800": "127 15 71", // #7f0f47
 		"--color-error-900": "104 12 58", // #680c3a
 		// surface | #0a000f 
-		"--color-surface-50": "218 217 219", // #dad9db
-		"--color-surface-100": "206 204 207", // #cecccf
-		"--color-surface-200": "194 191 195", // #c2bfc3
+		"--color-surface-50": "255 255 255", // #dad9db
+		"--color-surface-100": "255 255 255", // #cecccf
+		"--color-surface-200": "235 232 235", // #c2bfc3
 		"--color-surface-300": "157 153 159", // #9d999f
 		"--color-surface-400": "40 33 40", // #544d57
-		"--color-surface-500": "32 24 32", // #0a000f
-		"--color-surface-600": "25 20 25", // #09000e
+		"--color-surface-500": "25 23 25", // #0a000f
+		"--color-surface-600": "19 17 19", // #09000e
 		"--color-surface-700": "8 0 11", // #08000b
 		"--color-surface-800": "6 0 9", // #060009
 		"--color-surface-900": "5 0 7", // #050007		

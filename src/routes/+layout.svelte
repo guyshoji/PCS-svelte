@@ -62,7 +62,7 @@
 
 <!-- App Shell -->
 <AppShell>
-	<svelte:fragment slot="header">
+	<div class="bg-primary-100">
 		<!-- App Bar -->
 		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
 			<svelte:fragment slot="lead">
@@ -83,7 +83,7 @@
 				</button>
 			</svelte:fragment>
 		</AppBar>
-	</svelte:fragment>
+	</div>
 	<!-- Page Route Content -->
 
 	<Drawer>

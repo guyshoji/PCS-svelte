@@ -21,7 +21,7 @@
 
 <Fade
 	visibleOnPageLoad={false}
-	classes={`rounded-xl  flex flex-col gap-5 justify-between items-center p-6 h-full`}
+	classes={`rounded-xl bg-surface-${layer} flex flex-col gap-5 justify-between items-center p-6 h-full`}
 >
 	<h2 class="h3 dark:text-white font-bold"><slot /></h2>
 	<img src={img} class="rounded-full w-3/4" alt="Person Professional Headshot" />
@@ -38,14 +38,14 @@
 			<p class="italic dark:text-white">{major}</p>
 		</div>
 		<a
-			class="flex justify-center content-center items-center hover:text-primary-400"
+			class="flex justify-center content-center items-center hover:text-primary-500 duration-200"
 			href={linkedin}
 			target="_blank"
 		>
 			<Icon
 				icon="mdi:linkedin"
 				width="50"
-				class="dark:text-white hover:text-primary-400 hover:color-primary-400"
+				class="dark:text-white hover:text-primary-500 hover:color-primary-500 duration-200"
 			/>
 		</a>
 	</div>

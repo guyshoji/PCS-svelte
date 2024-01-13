@@ -30,7 +30,7 @@
 	</div>
 	<div class={`flex justify-center align-right gap-10 ${pmClass}`}>
 		{#each projectManagers as { name, roles, linkedin, img, major, graduation }}
-			<MemberCard {img} {roles} classYear={graduation} {linkedin} {major} layer="400"
+			<MemberCard {img} {roles} classYear={graduation} {linkedin} {major} layer="500"
 				>{name}</MemberCard
 			>
 		{/each}
