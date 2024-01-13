@@ -5,7 +5,7 @@
 
 <div class="w-full flex flex-col justify-between pt-20">
 	<div class="w-full bg-primary-700 h-px"></div>
-	<div class="flex flex-row justify-evenly gap-32">
+	<div class="flex flex-row justify-evenly gap-32 a">
 		<div class="flex flex-col gap-5 p-10 font-bold">
 			<a class="hover:font-normal dark:text-white" href="/"> <p>Home</p></a>
 			<a class="hover:font-normal dark:text-white" href="/about"> <p>About Us</p></a>
@@ -42,3 +42,11 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	@media (max-width: 580px) {
+		.a {
+			gap: 0.5rem;
+		}
+	}
+</style>

@@ -21,9 +21,9 @@
 
 <Fade
 	visibleOnPageLoad={false}
-	classes={`rounded-xl bg-surface-${layer} flex flex-col gap-5 justify-between items-center p-6 h-full`}
+	classes={`rounded-xl  flex flex-col gap-5 justify-between items-center p-6 h-full`}
 >
-	<h2 class="h3 font-bold"><slot /></h2>
+	<h2 class="h3 dark:text-white font-bold"><slot /></h2>
 	<img src={img} class="rounded-full w-3/4" alt="Person Professional Headshot" />
 	<div class="flex flex-row flex-wrap">
 		{#each roles as role}
@@ -34,8 +34,8 @@
 	</div>
 	<div class="flex flex-row gap-3 justify-between w-full px-2">
 		<div class="flex flex-col">
-			<p class="text-primary-200">Class of {classYear}</p>
-			<p class="italic">{major}</p>
+			<p class="text-primary-700 drak:text-primary-200">Class of {classYear}</p>
+			<p class="italic dark:text-white">{major}</p>
 		</div>
 		<a
 			class="flex justify-center content-center items-center hover:text-primary-400"

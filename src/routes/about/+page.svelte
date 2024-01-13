@@ -35,30 +35,34 @@
 
 	let eventCards = [
 		{
-			img: "/meetings.png",
-			title: "General Meetings",
-			timeInfo: "Thursday 8 - 9 PM",
-			description: "At GMs we host discussions and debates about current events, often relating to AI and Tech Policy, have guest speaker presentations, and share project updates with the group"
+			img: '/meetings.png',
+			title: 'General Meetings',
+			timeInfo: 'Thursday 8 - 9 PM',
+			description:
+				'At GMs we host discussions and debates about current events, often relating to AI and Tech Policy, have guest speaker presentations, and share project updates with the group'
 		},
 		{
-			img: "/project.png",
-			title: "Project Meetings",
-			timeInfo: "Weekly, varying by project",
-			description: "The time requirement, duration, locations, and agenda can vary from project to project. They are a great way to gain experience in technical work, research, or policy analysis!"
+			img: '/project.png',
+			title: 'Project Meetings',
+			timeInfo: 'Weekly, varying by project',
+			description:
+				'The time requirement, duration, locations, and agenda can vary from project to project. They are a great way to gain experience in technical work, research, or policy analysis!'
 		},
 		{
-			img: "/workshop.JPG",
-			title: "Development Workshops",
-			timeInfo: "2 - 3 / month, optional",
-			description: "We host a few workshops each month focusing on improving our members' skillsets, including resumé and career workshops, data science, web development, and much more!"
+			img: '/workshop.JPG',
+			title: 'Development Workshops',
+			timeInfo: '2 - 3 / month, optional',
+			description:
+				"We host a few workshops each month focusing on improving our members' skillsets, including resumé and career workshops, data science, web development, and much more!"
 		},
 		{
-			img: "/group-pic.jpeg",
-			title: "Socials",
-			timeInfo: "2 - 3 / month",
-			description: "Socials can vary in type, like watching debates together, hiking, biking, excursions, parties, and of course we have a retreat each semester!"
-		},
-	]
+			img: '/group-pic.jpeg',
+			title: 'Socials',
+			timeInfo: '2 - 3 / month',
+			description:
+				'Socials can vary in type, like watching debates together, hiking, biking, excursions, parties, and of course we have a retreat each semester!'
+		}
+	];
 </script>
 
 <div class="flex ab flex-col px-10">
@@ -92,10 +96,10 @@
 		<div class="mt-48 flex flex-col gap-10">
 			<h1 class="h4 text-primary-500 smallHeader">Time Commitment</h1>
 			<div class="cardsGrid p-4 gap-20">
-				{#each eventCards as { img, title, timeInfo, description}}
+				{#each eventCards as { img, title, timeInfo, description }}
 					<EventCard {img} {title} {timeInfo} {description} />
 				{/each}
-				
+			</div>
 		</div></Fade
 	>
 	<Footer />
@@ -106,11 +110,7 @@
 		text-align: center;
 		font-weight: bold;
 	}
-	@media (min-width: 580px) {
-		.ab {
-			margin-top: 3rem;
-		}
-	}
+
 	@media (min-width: 1080px) {
 		.ab {
 			margin-top: 15%;
@@ -127,6 +127,16 @@
 		.cardsGrid {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+	@media (max-width: 580px) {
+		.ab {
+			margin-top: 3rem;
+		}
+		.cardsGrid {
+			grid-template-columns: 1fr;
+			/* display: flex; */
+			/* flex-direction: column; */
 		}
 	}
 </style>

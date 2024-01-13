@@ -6,7 +6,9 @@
 </script>
 
 <div
-	class="flex flex-col gap-5 bg-surface-500 rounded-xl hover:bg-primary-900 items-start flex-1 duration-300 overflow-hidden"
+	class="flex flex-col gap-5 bg-secondary-100 dark:bg-primary-900
+	rounded-xl hover:bg-primary-200 items-start dark:hover:bg-primary-700 
+	flex-1 duration-300 overflow-hidden"
 >
 	<div class="w-full">
 		<img class="overflow-hidden" src={img} alt={title} />
