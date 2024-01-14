@@ -63,7 +63,7 @@
 
 <!-- App Shell -->
 <AppShell>
-	<div class="bg-primary-100">
+	<div class="bg-transparent">
 		<!-- App Bar -->
 		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
 			<svelte:fragment slot="lead">
@@ -103,9 +103,13 @@
 		</div>
 	</Drawer>
 	<slot />
-	<svelte:fragment slot="footer">
+	<div slot="footer" class="w-full flex flex-row justify-between items-center relative z-50 space-around">
+		<a href="https://www.ocf.berkeley.edu" class="p-0">
+			<img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg"
+				alt="Hosted by the OCF" style="border: 0;" />
+		</a>		
 		<h1 class="text-right dark:text-white m-3">© PCS Berkeley 2023</h1>
-	</svelte:fragment>
+	</div>
 </AppShell>
 
 <style>

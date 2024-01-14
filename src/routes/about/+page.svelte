@@ -72,7 +72,7 @@
 			<h4 class="h4 text-primary-500 smallHeader">About Us</h4>
 			<h1 class="text-6xl text-center font-bold">Our Mission Statement</h1>
 			<div class="flex px-10">
-				<p class="h5 text-secondary-500 dark:text-secondary-100 leading-10 text-center">
+				<p class="h5 text-secondary-100 leading-10 text-center">
 					Political Computer Science strives to better understand the intersection of policy and
 					technology. From analyzing algorithmic bias to evaluating tech policy, our club recognizes
 					the imperfections within the tech industry and fosters conversations about how we can

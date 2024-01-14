@@ -7,7 +7,7 @@ export const pcsTheme: CustomThemeConfig = {
 		// =~= Theme Properties =~=
 		"--theme-font-family-base": `system-ui`,
 		"--theme-font-family-heading": `system-ui`,
-		"--theme-font-color-base": "0 0 0",
+		"--theme-font-color-base": "255 255 255",
 		"--theme-font-color-dark": "255 255 255",
 		"--theme-rounded-base": "9999px",
 		"--theme-rounded-container": "8px",
@@ -22,9 +22,9 @@ export const pcsTheme: CustomThemeConfig = {
 		"--on-surface": "255 255 255",
 		// =~= Theme Colors  =~=
 		// primary | #a356f0 
-		"--color-primary-50": "255 250 255", // #f1e6fd
-		"--color-primary-100": "237 221 252", // #edddfc
-		"--color-primary-200": "232 213 251", // #e8d5fb
+		"--color-primary-50": "80 42 118", // #f1e6fd
+		"--color-primary-100": "98 52 144", // #edddfc
+		"--color-primary-200": "122 65 180", // #e8d5fb
 		"--color-primary-300": "218 187 249", // #dabbf9
 		"--color-primary-400": "205 79 255", // #bf89f5
 		"--color-primary-500": "163 86 240", // #a356f0
@@ -40,9 +40,9 @@ export const pcsTheme: CustomThemeConfig = {
 		"--color-secondary-400": "116 77 155", // #744d9b
 		"--color-secondary-500": "56 0 112", // #380070
 		"--color-secondary-600": "50 0 101", // #320065
-		"--color-secondary-700": "42 0 84", // #2a0054
-		"--color-secondary-800": "34 0 67", // #220043
-		"--color-secondary-900": "27 0 55", // #1b0037
+		"--color-secondary-700": "205 217 234", // #2a0054
+		"--color-secondary-800": "215 204 226", // #220043
+		"--color-secondary-900": "225 217 234", // #1b0037
 		// tertiary | #000000 
 		"--color-tertiary-50": "217 217 217", // #d9d9d9
 		"--color-tertiary-100": "204 204 204", // #cccccc
@@ -88,9 +88,9 @@ export const pcsTheme: CustomThemeConfig = {
 		"--color-error-800": "127 15 71", // #7f0f47
 		"--color-error-900": "104 12 58", // #680c3a
 		// surface | #0a000f 
-		"--color-surface-50": "255 255 255", // #dad9db
-		"--color-surface-100": "255 255 255", // #cecccf
-		"--color-surface-200": "235 232 235", // #c2bfc3
+		"--color-surface-50": "5 0 7", // #dad9db
+		"--color-surface-100": "6 0 9", // #cecccf
+		"--color-surface-200": "8 0 11", // #c2bfc3
 		"--color-surface-300": "157 153 159", // #9d999f
 		"--color-surface-400": "40 33 40", // #544d57
 		"--color-surface-500": "25 23 25", // #0a000f

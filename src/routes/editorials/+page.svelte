@@ -59,7 +59,8 @@
 		<Fade>
 			<h1 class="text-6xl font-bold">Articles</h1>
 		</Fade>
-		<div class="grid grid-cols-4 gap-10 p-14">
+		<div class="w-1/6 bg-primary-500 h-0.5 mt-12"></div>
+		<div class="grid articleGrid gap-10 p-14">
 			{#each articles as { title, description, link }}
 				<!--<a class="card m-3 p-3" href={article.link}>-->
 				<!--<h2 class="text-xl dark:text-white font-bold">{article.title}</h2>
@@ -81,5 +82,25 @@
 	}
 	.articleContainer {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	@media (min-width: 1200px) {
+		.articleGrid {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+	@media (max-width: 1200px) and (min-width: 1000px) {
+		.articleGrid {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	} 
+	@media (max-width: 1000px) and (min-width: 600px) {
+		.articleGrid {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	@media (max-width: 600px) {
+		.articleGrid {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>
