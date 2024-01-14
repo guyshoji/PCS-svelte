@@ -63,7 +63,7 @@
 
 <!-- App Shell -->
 <AppShell>
-	<div class="bg-transparent">
+	<div class="bg-transparent absolute">
 		<!-- App Bar -->
 		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
 			<svelte:fragment slot="lead">
