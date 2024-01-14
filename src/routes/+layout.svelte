@@ -10,9 +10,8 @@
 		type DrawerSettings,
 		type AutocompleteOption
 	} from '@skeletonlabs/skeleton';
+
 	import { page } from '$app/stores';
-	import { Canvas } from '@threlte/core';
-	import Scene from '$lib/SplashScene.svelte';
 	export const prerender = true;
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
@@ -63,7 +62,7 @@
 
 <!-- App Shell -->
 <AppShell>
-	<div class="bg-transparent absolute">
+	<div class="bg-transparent">
 		<!-- App Bar -->
 		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
 			<svelte:fragment slot="lead">

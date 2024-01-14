@@ -83,16 +83,6 @@
       "_writeEffect.js"
     ]
   },
-  "_vertex.js": {
-    "css": [
-      "_app/immutable/assets/vertex.spkhP8Ll.css"
-    ],
-    "file": "chunks/vertex.js",
-    "imports": [
-      "_ssr.js",
-      "_index.js"
-    ]
-  },
   "_writeAndUnwriteText.js": {
     "file": "chunks/writeAndUnwriteText.js",
     "imports": [
@@ -190,7 +180,6 @@
       "_index.js",
       "_ProgressBar.svelte_svelte_type_style_lang.js",
       "_client.js",
-      "_vertex.js",
       "_Icon.js"
     ],
     "isEntry": true,
@@ -198,7 +187,7 @@
   },
   "src/routes/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.mgoZeHPR.css"
+      "_app/immutable/assets/_page.ujWusrPr.css"
     ],
     "dynamicImports": [
       "node_modules/svelte-typewriter/package/modes/concurrent.js",
@@ -212,7 +201,6 @@
     "imports": [
       "_ssr.js",
       "_index.js",
-      "_vertex.js",
       "_Footer.js"
     ],
     "isEntry": true,

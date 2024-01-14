@@ -2,8 +2,6 @@ import { g as getContext, s as setContext, c as create_ssr_component, e as escap
 import { w as writable } from "../../chunks/index.js";
 import { p as prefersReducedMotionStore, m as modeCurrent, s as setInitialClassState, a as autoModeWatcher } from "../../chunks/ProgressBar.svelte_svelte_type_style_lang.js";
 import "../../chunks/client.js";
-import "mitt";
-import "../../chunks/vertex.js";
 import { computePosition, autoUpdate, offset, shift, flip, arrow } from "@floating-ui/dom";
 import { I as Icon } from "../../chunks/Icon.js";
 const storePopup = writable(void 0);
@@ -484,7 +482,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div slot="footer" class="w-full flex flex-row justify-between items-center bg-surface-900 relative z-50 space-around" data-svelte-h="svelte-1odx3de"><a href="https://www.ocf.berkeley.edu" class="p-0"><img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" style="border: 0;"></a> <h1 class="text-right dark:text-white m-3">© PCS Berkeley 2023</h1></div>`;
     },
     default: () => {
-      return `<div class="bg-transparent absolute"> ${validate_component(AppBar, "AppBar").$$render(
+      return `<div class="bg-transparent"> ${validate_component(AppBar, "AppBar").$$render(
         $$result,
         {
           gridColumns: "grid-cols-3",
