@@ -1,5 +1,5 @@
 import { c as create_ssr_component, v as validate_component } from "../../../chunks/ssr.js";
-import { F as Fade, a as Footer } from "../../../chunks/Footer.js";
+import { a as Fade, b as Footer } from "../../../chunks/Footer.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div class="h-full"><div class="h-full flex flex-col justify-start items-center">${validate_component(Fade, "Fade").$$render($$result, {}, {}, {
     default: () => {

@@ -482,17 +482,18 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div slot="footer" class="w-full flex flex-row justify-between items-center bg-surface-900 relative z-50 space-around" data-svelte-h="svelte-1odx3de"><a href="https://www.ocf.berkeley.edu" class="p-0"><img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" style="border: 0;"></a> <h1 class="text-right dark:text-white m-3">© PCS Berkeley 2023</h1></div>`;
     },
     default: () => {
-      return `<div class="bg-transparent"> ${validate_component(AppBar, "AppBar").$$render(
+      return `<div class="bg-transparent absolute"> ${validate_component(AppBar, "AppBar").$$render(
         $$result,
         {
           gridColumns: "grid-cols-3",
           slotDefault: "place-self-center",
-          slotTrail: "place-content-end"
+          slotTrail: "place-content-end",
+          class: "bg-transparent"
         },
         {},
         {
           trail: () => {
-            return `${validate_component(LightSwitch, "LightSwitch").$$render($$result, {}, {}, {})} <button class="btn card-hover">${validate_component(Icon, "Icon").$$render(
+            return `${validate_component(LightSwitch, "LightSwitch").$$render($$result, {}, {}, {})} <button class="btn card-hover relative z-40">${validate_component(Icon, "Icon").$$render(
               $$result,
               {
                 icon: "ion:language-outline",
@@ -504,19 +505,19 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
               $$result,
               {
                 icon: "material-symbols:density-medium-rounded",
-                class: "dark:text-white"
+                class: "dark:text-white  relative z-40"
               },
               {},
               {}
             )}</button> `;
           },
           lead: () => {
-            return `<a href="/" class="w-1/6 flex text-center content-center" data-svelte-h="svelte-1oin5ul"><img src="/pcs-logo.png" class="bg-white pcs-logo svelte-1m7vizb" alt="PCS Icon"> <span class="text-xl dark:text-white font-semibold mx-4 m-auto">PCS@Berkeley</span></a>`;
+            return `<a href="/" class="w-1/6 flex text-center content-center relative z-40" data-svelte-h="svelte-1kcyg1s"><img src="/pcs-logo.png" class="bg-white pcs-logo svelte-1m7vizb" alt="PCS Icon"> <span class="text-xl dark:text-white font-semibold mx-4 m-auto">PCS@Berkeley</span></a>`;
           }
         }
       )}</div>  ${validate_component(Drawer, "Drawer").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="w-fit font-semibold flex flex-col p-3" data-svelte-h="svelte-17n22jt"><a class="hover:font-normal dark:text-white p-3" href="/"><p>Home</p></a> <a class="hover:font-normal dark:text-white p-3" href="/about"><p>About Us</p></a> <a class="hover:font-normal dark:text-white p-3" href="/projects"><p>Projects</p></a> <a class="hover:font-normal dark:text-white p-3" href="/members"><p>Members</p></a> <a class="hover:font-normal dark:text-white p-3" href="/editorials"><p>Editorials</p></a> <a class="hover:font-normal dark:text-white p-3" href="/calendar"><p>Calendar</p></a> <a class="btn variant-filled-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdLTjL76KESHNkkE-H5BRoGimma8ja0H55lt1-8KsSIzirRdQ/viewform">Join Us</a></div>`;
+          return `<div class="w-fit font-semibold flex flex-col p-3 relative z-50" data-svelte-h="svelte-naofxt"><a class="hover:font-normal dark:text-white p-3" href="/"><p>Home</p></a> <a class="hover:font-normal dark:text-white p-3" href="/about"><p>About Us</p></a> <a class="hover:font-normal dark:text-white p-3" href="/projects"><p>Projects</p></a> <a class="hover:font-normal dark:text-white p-3" href="/members"><p>Members</p></a> <a class="hover:font-normal dark:text-white p-3" href="/editorials"><p>Editorials</p></a> <a class="hover:font-normal dark:text-white p-3" href="/calendar"><p>Calendar</p></a> <a class="btn variant-filled-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdLTjL76KESHNkkE-H5BRoGimma8ja0H55lt1-8KsSIzirRdQ/viewform">Join Us</a></div>`;
         }
       })} ${slots.default ? slots.default({}) : ``}`;
     }

@@ -47,6 +47,16 @@
       "_ssr.js"
     ]
   },
+  "_TiltDivider.svelte_svelte_type_style_lang.js": {
+    "css": [
+      "_app/immutable/assets/TiltDivider.r7IiDxLo.css"
+    ],
+    "file": "chunks/TiltDivider.svelte_svelte_type_style_lang.js",
+    "imports": [
+      "_ssr.js",
+      "_index.js"
+    ]
+  },
   "_animationSetup.js": {
     "file": "chunks/animationSetup.js",
     "imports": [
@@ -187,21 +197,13 @@
   },
   "src/routes/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.ujWusrPr.css"
-    ],
-    "dynamicImports": [
-      "node_modules/svelte-typewriter/package/modes/concurrent.js",
-      "node_modules/svelte-typewriter/package/modes/cascade.js",
-      "node_modules/svelte-typewriter/package/modes/loop.js",
-      "node_modules/svelte-typewriter/package/modes/loopOnce.js",
-      "node_modules/svelte-typewriter/package/modes/loopRandom.js",
-      "node_modules/svelte-typewriter/package/modes/scramble.js"
+      "_app/immutable/assets/Footer.qgVQejMD.css"
     ],
     "file": "entries/pages/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_index.js",
-      "_Footer.js"
+      "_TiltDivider.svelte_svelte_type_style_lang.js",
+      "_client.js"
     ],
     "isEntry": true,
     "src": "src/routes/+page.svelte"
@@ -240,6 +242,29 @@
     ],
     "isEntry": true,
     "src": "src/routes/editorials/+page.svelte"
+  },
+  "src/routes/home/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.HfzDXS2r.css"
+    ],
+    "dynamicImports": [
+      "node_modules/svelte-typewriter/package/modes/concurrent.js",
+      "node_modules/svelte-typewriter/package/modes/cascade.js",
+      "node_modules/svelte-typewriter/package/modes/loop.js",
+      "node_modules/svelte-typewriter/package/modes/loopOnce.js",
+      "node_modules/svelte-typewriter/package/modes/loopRandom.js",
+      "node_modules/svelte-typewriter/package/modes/scramble.js"
+    ],
+    "file": "entries/pages/home/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_TiltDivider.svelte_svelte_type_style_lang.js",
+      "_index.js",
+      "_Footer.js",
+      "_client.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/home/+page.svelte"
   },
   "src/routes/members/+page.svelte": {
     "css": [

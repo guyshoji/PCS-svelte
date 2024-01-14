@@ -163,7 +163,7 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   )}</a></div></div> </div>`;
 });
 export {
-  Fade as F,
-  Footer as a,
-  Fa as b
+  Fa as F,
+  Fade as a,
+  Footer as b
 };

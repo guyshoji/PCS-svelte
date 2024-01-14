@@ -62,11 +62,11 @@
 
 <!-- App Shell -->
 <AppShell>
-	<div class="bg-transparent">
+	<div class="bg-transparent absolute">
 		<!-- App Bar -->
-		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
+		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end" class="bg-transparent">
 			<svelte:fragment slot="lead">
-				<a href="/" class="w-1/6 flex text-center content-center"
+				<a href="/" class="w-1/6 flex text-center content-center relative z-40"
 					><img src="/pcs-logo.png" class="bg-white pcs-logo" alt="PCS Icon" />
 
 					<span class="text-xl dark:text-white font-semibold mx-4 m-auto">PCS@Berkeley</span>
@@ -75,11 +75,11 @@
 			<svelte:fragment slot="default"></svelte:fragment>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
-				<button class="btn card-hover" on:click={a}
+				<button class="btn card-hover  relative z-40" on:click={a}
 					><Icon icon="ion:language-outline" class="dark:text-white" /></button
 				>
 				<button on:click={triggerDrawer}>
-					<Icon icon="material-symbols:density-medium-rounded" class="dark:text-white" />
+					<Icon icon="material-symbols:density-medium-rounded" class="dark:text-white  relative z-40" />
 				</button>
 			</svelte:fragment>
 		</AppBar>
@@ -87,7 +87,7 @@
 	<!-- Page Route Content -->
 
 	<Drawer>
-		<div class="w-fit font-semibold flex flex-col p-3">
+		<div class="w-fit font-semibold flex flex-col p-3 relative z-50">
 			<a class="hover:font-normal dark:text-white p-3" href="/"> <p>Home</p></a>
 			<a class="hover:font-normal dark:text-white p-3" href="/about"> <p>About Us</p></a>
 			<a class="hover:font-normal dark:text-white p-3" href="/projects"> <p>Projects</p></a>

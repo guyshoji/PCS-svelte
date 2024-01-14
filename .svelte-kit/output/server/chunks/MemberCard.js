@@ -1,6 +1,6 @@
-import { c as create_ssr_component, v as validate_component, a as add_attribute, t as each, e as escape, x as null_to_empty } from "./ssr.js";
+import { c as create_ssr_component, v as validate_component, a as add_attribute, i as each, e as escape, x as null_to_empty } from "./ssr.js";
 import { I as Icon } from "./Icon.js";
-import { F as Fade } from "./Footer.js";
+import { a as Fade } from "./Footer.js";
 const css = {
   code: ".role.svelte-7lgwed{padding-top:0.2rem;padding-bottom:0.2rem;padding-left:0.5rem;padding-right:0.5rem;border-radius:3rem}",
   map: null

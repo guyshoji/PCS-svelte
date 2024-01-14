@@ -1,5 +1,5 @@
-import { c as create_ssr_component, e as escape, x as null_to_empty, t as each, v as validate_component } from "../../../chunks/ssr.js";
-import { F as Fade, a as Footer } from "../../../chunks/Footer.js";
+import { c as create_ssr_component, e as escape, x as null_to_empty, i as each, v as validate_component } from "../../../chunks/ssr.js";
+import { a as Fade, b as Footer } from "../../../chunks/Footer.js";
 import { M as MemberCard } from "../../../chunks/MemberCard.js";
 const projects = [
   {

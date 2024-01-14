@@ -1,6 +1,6 @@
-import { c as create_ssr_component, v as validate_component, e as escape, a as add_attribute, t as each } from "../../../chunks/ssr.js";
+import { c as create_ssr_component, v as validate_component, e as escape, a as add_attribute, i as each } from "../../../chunks/ssr.js";
 /* empty css                                                   */
-import { b as Fa, F as Fade, a as Footer } from "../../../chunks/Footer.js";
+import { F as Fa, a as Fade, b as Footer } from "../../../chunks/Footer.js";
 import { faLandmark, faComputer, faHandshake, faUser } from "@fortawesome/free-solid-svg-icons";
 const IconCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { icon } = $$props;
