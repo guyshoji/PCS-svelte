@@ -103,7 +103,7 @@
 		</div>
 	</Drawer>
 	<slot />
-	<div slot="footer" class="w-full flex flex-row justify-between items-center relative z-50 space-around">
+	<div slot="footer" class="w-full flex flex-row justify-between items-center bg-surface-900 relative z-50 space-around">
 		<a href="https://www.ocf.berkeley.edu" class="p-0">
 			<img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg"
 				alt="Hosted by the OCF" style="border: 0;" />

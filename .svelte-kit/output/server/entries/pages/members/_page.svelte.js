@@ -11,7 +11,7 @@ const members = [
       "Member"
     ],
     linkedin: "https://www.linkedin.com/in/miller-jaquet/",
-    img: "/pcs-logo.png",
+    img: "/Members/miller-prof.png",
     imgSilly: "/group-pic.jpeg",
     major: "Interdisciplinary Studies",
     graduation: "2025"
@@ -135,6 +135,50 @@ const members = [
     img: "/Members/kailen-prof.jpeg",
     imgSilly: "/Members/Kailen-silly.jpg",
     major: "Political Science, Public Policy (Minor)",
+    graduation: "2025"
+  },
+  {
+    name: "Emile Shah",
+    title: [
+      "Member"
+    ],
+    linkedin: "https://www.linkedin.com/in/emile-shah/",
+    img: "/Members/emile-prof.jpg",
+    imgSilly: "/Members/emile-prof.jpg",
+    major: "Data Science & Political Science",
+    graduation: "2027"
+  },
+  {
+    name: "Andrew Chen",
+    title: [
+      "Senior Member"
+    ],
+    linkedin: "https://www.linkedin.com/in/andrewchen04",
+    img: "/Members/andrew-prof.jpeg",
+    imgSilly: "/Members/andrew-prof.jpeg",
+    major: "Political Science & Psychology",
+    graduation: "2024"
+  },
+  {
+    name: "Carolyn Wang",
+    title: [
+      "Member"
+    ],
+    linkedin: "https://www.linkedin.com/in/carolyn-wang-jy/",
+    img: "/Members/carolyn-prof.jpg",
+    imgSilly: "/Members/carolyn-prof.jpg",
+    major: "Computer Science",
+    graduation: "2027"
+  },
+  {
+    name: "Mark Verzhbinsky",
+    title: [
+      "Member"
+    ],
+    linkedin: "https://www.linkedin.com/in/mark-verzhbinsky-920059232",
+    img: "/Members/mark-prof.jpeg",
+    imgSilly: "/Members/mark-prof.jpeg",
+    major: "Political Science",
     graduation: "2025"
   }
 ];

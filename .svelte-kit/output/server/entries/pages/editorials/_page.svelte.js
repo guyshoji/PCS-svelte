@@ -57,7 +57,7 @@ const Loading = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div class="h-full flex flex-col justify-center items-center">${validate_component(ProgressRadial, "ProgressRadial").$$render($$result, {}, {}, {})}</div>`;
 });
 const css = {
-  code: ".smallHeader.svelte-zbk505{text-align:center;font-weight:bold}",
+  code: ".smallHeader.svelte-12pvx0n{text-align:center;font-weight:bold}@media(min-width: 1200px){.articleGrid.svelte-12pvx0n{grid-template-columns:1fr 1fr 1fr 1fr}}@media(max-width: 1200px) and (min-width: 1000px){.articleGrid.svelte-12pvx0n{grid-template-columns:1fr 1fr 1fr}}@media(max-width: 1000px) and (min-width: 600px){.articleGrid.svelte-12pvx0n{grid-template-columns:1fr 1fr}}@media(max-width: 600px){.articleGrid.svelte-12pvx0n{grid-template-columns:1fr}}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {

@@ -481,10 +481,10 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `${$$result.head += `<!-- HEAD_svelte-293o2g_START --><!-- HTML_TAG_START -->${`<script>${autoModeWatcher.toString()} autoModeWatcher();<\/script>`}<!-- HTML_TAG_END --><!-- HEAD_svelte-293o2g_END -->`, ""}  ${validate_component(AppShell, "AppShell").$$render($$result, {}, {}, {
     footer: () => {
-      return ` <h1 class="text-right dark:text-white m-3" data-svelte-h="svelte-240h92">© PCS Berkeley 2023</h1> `;
+      return `<div slot="footer" class="w-full flex flex-row justify-between items-center bg-surface-900 relative z-50 space-around" data-svelte-h="svelte-1odx3de"><a href="https://www.ocf.berkeley.edu" class="p-0"><img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" style="border: 0;"></a> <h1 class="text-right dark:text-white m-3">© PCS Berkeley 2023</h1></div>`;
     },
     default: () => {
-      return `<div class="bg-primary-100"> ${validate_component(AppBar, "AppBar").$$render(
+      return `<div class="bg-transparent"> ${validate_component(AppBar, "AppBar").$$render(
         $$result,
         {
           gridColumns: "grid-cols-3",

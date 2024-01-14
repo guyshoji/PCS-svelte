@@ -44,8 +44,8 @@ const MemberCard = create_ssr_component(($$result, $$props, $$bindings, slots) =
     {
       default: () => {
         return `<h2 class="h3 dark:text-white font-bold">${slots.default ? slots.default({}) : ``}</h2> <img${add_attribute("src", img, 0)} class="rounded-full w-3/4" alt="Person Professional Headshot"> <div class="flex flex-row flex-wrap">${each(roles, (role) => {
-          return `<div class="px-2 pt-2"><p class="${escape(null_to_empty("role".concat(determineColor(role))), true) + " svelte-7lgwed"}">${escape(role)}</p> </div>`;
-        })}</div> <div class="flex flex-row gap-3 justify-between w-full px-2"><div class="flex flex-col"><p class="text-primary-700 drak:text-primary-200">Class of ${escape(classYear)}</p> <p class="italic dark:text-white">${escape(major)}</p></div> <a class="flex justify-center content-center items-center hover:text-primary-500 duration-200"${add_attribute("href", linkedin, 0)} target="_blank">${validate_component(Icon, "Icon").$$render(
+          return `<div class="px-2 pt-2 text-center"><p class="${escape(null_to_empty("role".concat(determineColor(role))), true) + " svelte-7lgwed"}">${escape(role)}</p> </div>`;
+        })}</div> <div class="flex flex-row gap-3 justify-between w-full px-2"><div class="flex flex-col"><p class="text-primary-500 font-bold">Class of ${escape(classYear)}</p> <p class="italic dark:text-white">${escape(major)}</p></div> <a class="flex justify-center content-center items-center hover:text-primary-500 duration-200"${add_attribute("href", linkedin, 0)} target="_blank">${validate_component(Icon, "Icon").$$render(
           $$result,
           {
             icon: "mdi:linkedin",

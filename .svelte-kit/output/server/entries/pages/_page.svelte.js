@@ -864,7 +864,7 @@ const useRenderer = (ctx) => {
     createRenderer
   };
 };
-const css$2 = {
+const css$3 = {
   code: "canvas.svelte-1oju42t{display:block;z-index:20;position:fixed;top:0;left:0}",
   map: null
 };
@@ -954,7 +954,7 @@ const Canvas = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.autoRender(autoRender);
   if ($$props.ctx === void 0 && $$bindings.ctx && ctx !== void 0)
     $$bindings.ctx(ctx);
-  $$result.css.add(css$2);
+  $$result.css.add(css$3);
   {
     userSize.set(size);
   }
@@ -1959,7 +1959,7 @@ const SplashScene = create_ssr_component(($$result, $$props, $$bindings, slots) 
     {}
   )}`;
 });
-const css$1 = {
+const css$2 = {
   code: "@keyframes svelte-1gv2i7t-cursorFade{0%,100%{opacity:1}50%{opacity:0}}.typewriter-container.svelte-1gv2i7t *:not(.typing):not(.finished-typing):not([data-static]){display:none}.typewriter-container.svelte-1gv2i7t .finished-typing::after{content:none}.cursor.svelte-1gv2i7t .typing::after{content:'';width:var(--cursor-width, 1ch);height:2ch;display:inline-block;vertical-align:text-top;background-color:var(--cursor-color, #000000);animation:svelte-1gv2i7t-cursorFade 1.25s infinite}",
   map: null
 };
@@ -2016,7 +2016,7 @@ const Typewriter = create_ssr_component(($$result, $$props, $$bindings, slots) =
     $$bindings.unwriteInterval(unwriteInterval);
   if ($$props.wordInterval === void 0 && $$bindings.wordInterval && wordInterval !== void 0)
     $$bindings.wordInterval(wordInterval);
-  $$result.css.add(css$1);
+  $$result.css.add(css$2);
   isLoopMode = /^loop(Once|Random)?$/.test(mode);
   isFiniteCursorMode = ["concurrent", "cascade", "loopOnce"].includes(mode);
   invalidCursorOnFinish = !isFiniteCursorMode && keepCursorOnFinish;
@@ -2050,8 +2050,16 @@ const Typewriter = create_ssr_component(($$result, $$props, $$bindings, slots) =
     }();
   }(delayPromise())}`}`;
 });
+const css$1 = {
+  code: ".custom-shape-divider-bottom-1705252340.svelte-d124ky.svelte-d124ky{position:absolute;bottom:0;left:0;width:100%;overflow:hidden;line-height:0;transform:rotate(180deg)}.custom-shape-divider-bottom-1705252340.svelte-d124ky svg.svelte-d124ky{position:relative;display:block;width:calc(100% + 1.3px);height:150px}.custom-shape-divider-bottom-1705252340.svelte-d124ky .shape-fill.svelte-d124ky{fill:#000000}",
+  map: null
+};
+const TiltDivider = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  $$result.css.add(css$1);
+  return `<div class="custom-shape-divider-bottom-1705252340 svelte-d124ky" data-svelte-h="svelte-1ckxkif"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="svelte-d124ky"><path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill svelte-d124ky"></path></svg> </div>`;
+});
 const css = {
-  code: "@media screen and (min-width: 2200px){.animation.svelte-1rl6ab6{position:absolute;top:10vh;right:0;width:70%;height:80vh;overflow:hidden;z-index:20}.typewriter.svelte-1rl6ab6{width:30%;height:100vh;margin:0;position:absolute;top:0%;left:0;z-index:100}}@media screen and (max-width: 2200px) and (min-width: 1500px){.animation.svelte-1rl6ab6{position:absolute;top:25vh;right:0;width:50%;height:50vh;overflow:hidden;z-index:20}.typewriter.svelte-1rl6ab6{width:50%;height:100vh;margin:0;position:absolute;top:0%;left:0;z-index:100}}@media screen and (max-width: 1500px){.animation.svelte-1rl6ab6{position:absolute;top:0;right:0;width:100%;height:100vh;overflow:hidden;z-index:20}.typewriter.svelte-1rl6ab6{width:100%;height:100vh;margin:0;position:absolute;top:0;left:0;z-index:100;transform:translate(50% 50%)}}",
+  code: "@media screen and (min-width: 2200px){.animation.svelte-1ftqghe{top:10vh;right:0;width:70%;height:80vh;overflow:hidden}.typewriter.svelte-1ftqghe{width:30%;height:100vh;margin:0;position:relative;z-index:100}}@media screen and (max-width: 2200px) and (min-width: 1500px){.animation.svelte-1ftqghe{top:25vh;right:0;width:50%;height:50vh;overflow:hidden}.typewriter.svelte-1ftqghe{width:50%;height:100vh;position:relative;z-index:100}}@media screen and (max-width: 1500px){.animation.svelte-1ftqghe{top:0;right:0;width:100%;height:100vh;overflow:hidden}.typewriter.svelte-1ftqghe{width:100%;height:100vh;margin:0;position:relative;z-index:100}}.typewriter.svelte-1ftqghe{position:relative;width:100%;height:100vh;z-index:100}.animation.svelte-1ftqghe{position:relative;z-index:auto;pointer-events:none}@media(min-width: 1200px){.text-image.svelte-1ftqghe{flex-direction:row}.pcsHeader.svelte-1ftqghe{font-size:4.5rem;line-height:1.5}}@media(max-width: 1200px){.text-image.svelte-1ftqghe{flex-direction:column}.pcsHeader.svelte-1ftqghe{font-size:3rem;line-height:1.5}}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -2062,22 +2070,29 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     "A community for everyone.",
     "A community paving the path for ethical computing"
   ];
+  let scrollToElement;
   $$result.css.add(css);
-  return `<div class="w-full h-full"><div class="typewriter pointer-events-none select-none flex flex-col gap-20 pl-16 justify-center items-center svelte-1rl6ab6">${validate_component(Fade, "Fade").$$render($$result, {}, {}, {
-    default: () => {
-      return `<div class="flex flex-col gap-6 justify-center items-start text-left"><h1 class="text-7xl dark:text-white font-bold" data-svelte-h="svelte-1wjlhnr">Political Computer Science @ Berkeley</h1> ${validate_component(Typewriter, "Typewriter").$$render($$result, { mode: "loop", interval: 70 }, {}, {
-        default: () => {
-          return `${each(platitudes, (platitude) => {
-            return `<h1 class="font-bold text-lg m-3 drop-shadow-xl">${escape(platitude)}</h1>`;
-          })}`;
-        }
-      })} <a class="btn bg-primary-600 text-center font-bold flex" href="https://docs.google.com/forms/d/e/1FAIpQLSdLTjL76KESHNkkE-H5BRoGimma8ja0H55lt1-8KsSIzirRdQ/viewform" data-svelte-h="svelte-4klezx">Join Us</a></div>`;
-    }
-  })}</div> <div class="animation svelte-1rl6ab6">${validate_component(Canvas, "Canvas").$$render($$result, {}, {}, {
+  return `<div class="w-full h-screen absolute z-0"><div class="animation svelte-1ftqghe">${validate_component(Canvas, "Canvas").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(SplashScene, "Scene").$$render($$result, {}, {}, {})}`;
     }
-  })}</div></div> ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
+  })}</div></div> <div class="w-full h-screen relative z-10"><div class="typewriter select-none flex flex-col gap-20 pl-16 justify-center items-center svelte-1ftqghe">${validate_component(Fade, "Fade").$$render($$result, {}, {}, {
+    default: () => {
+      return `<div class="flex flex-col gap-4 justify-center items-start text-left"><h1 class="pcsHeader dark:text-white font-bold svelte-1ftqghe" data-svelte-h="svelte-h6riut">Political Computer Science @ Berkeley</h1> ${validate_component(Typewriter, "Typewriter").$$render($$result, { mode: "loop", interval: 70 }, {}, {
+        default: () => {
+          return `${each(platitudes, (platitude) => {
+            return `<h1 class="font-bold text-lg my-3 mr-3 ml-1 drop-shadow-xl">${escape(platitude)}</h1>`;
+          })}`;
+        }
+      })} <div class="flex flex-row justify-center items-start gap-4"><a class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" href="https://docs.google.com/forms/d/e/1FAIpQLSdLTjL76KESHNkkE-H5BRoGimma8ja0H55lt1-8KsSIzirRdQ/viewform" data-svelte-h="svelte-ch110a">Join Us</a> <button class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" data-svelte-h="svelte-118wphx">Learn More</button></div></div>`;
+    }
+  })}</div> ${validate_component(TiltDivider, "TiltDivider").$$render($$result, {}, {}, {})}</div> <div class="flex flex-col justify-center items-center text-center w-full relative bg-surface-900 z-50 gap-10 py-20"${add_attribute("this", scrollToElement, 0)} data-svelte-h="svelte-16r3opz"><div class="flex text-image justify-evenly gap-10 svelte-1ftqghe"><div class="flex flex-col gap-10 px-12 flex-1 text-center justify-center items-center"><h1 class="h1 font-bold">Who Are We?</h1> <p class="p leading-10">Political Computer Science @ Berkeley is a club dedicated to exploring interdisciplinary
+				work connecting the technology and political fields. Don&#39;t be fooled-- we have plenty of
+				individuals with a strong tech background and host several web development/data science
+				project each semester, but we also have room for individuals to explore non-technical
+				projects relating to tech policy, and even code tools to help inform others about
+				government.</p> <div><a class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" href="/about">About Us</a></div></div> <div class="p-10 flex-1 flex flex-col justify-center items-center"><img src="/meetings.png" alt="General Meetings"></div></div> <div class="flex flex-col gap-5 w-3/4 items-center justify-center text-center"><h1 class="h1 font-bold pt-20 leading-10">Spring 2024 Recruitment</h1> <p class="p leading-10">Our Spring 2024 Recruitment Schedule is still TBA, but please visit our &quot;Calendar&quot; page for
+			updates and follow us on Instagram.</p> <div><a class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" href="/about">About Us</a></div></div></div> ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
 });
 export {
   Page as default

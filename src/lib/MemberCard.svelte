@@ -27,14 +27,14 @@
 	<img src={img} class="rounded-full w-3/4" alt="Person Professional Headshot" />
 	<div class="flex flex-row flex-wrap">
 		{#each roles as role}
-			<div class="px-2 pt-2">
+			<div class="px-2 pt-2 text-center">
 				<p class={'role'.concat(determineColor(role))}>{role}</p>
 			</div>
 		{/each}
 	</div>
 	<div class="flex flex-row gap-3 justify-between w-full px-2">
 		<div class="flex flex-col">
-			<p class="text-primary-700 drak:text-primary-200">Class of {classYear}</p>
+			<p class="text-primary-500 font-bold">Class of {classYear}</p>
 			<p class="italic dark:text-white">{major}</p>
 		</div>
 		<a
