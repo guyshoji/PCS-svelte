@@ -39,7 +39,7 @@
 			title: 'General Meetings',
 			timeInfo: 'Thursday 8 - 9 PM',
 			description:
-				'At GMs we host discussions and debates about current events, often relating to AI and Tech Policy, have guest speaker presentations, and share project updates with the group'
+				'At GMs, we host discussions and debates about current events, often relating to AI and tech policy, have guest speaker presentations, and share project updates with the group.'
 		},
 		{
 			img: '/project.png',
@@ -51,14 +51,14 @@
 		{
 			img: '/workshop.JPG',
 			title: 'Development Workshops',
-			timeInfo: '2 - 3 / month, optional',
+			timeInfo: '2 - 3 / month, (optional, but highly recommended)',
 			description:
 				"We host a few workshops each month focusing on improving our members' skillsets, including resumé and career workshops, data science, web development, and much more!"
 		},
 		{
 			img: '/group-pic.jpeg',
 			title: 'Socials',
-			timeInfo: '2 - 3 / month',
+			timeInfo: '2 - 3 / month, (optional, but highly recommended)',
 			description:
 				'Socials can vary in type, like watching debates together, hiking, biking, excursions, parties, and of course we have a retreat each semester!'
 		}

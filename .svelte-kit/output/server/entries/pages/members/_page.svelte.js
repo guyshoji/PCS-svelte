@@ -167,7 +167,7 @@ const members = [
     linkedin: "https://www.linkedin.com/in/carolyn-wang-jy/",
     img: "/Members/carolyn-prof.jpg",
     imgSilly: "/Members/carolyn-prof.jpg",
-    major: "Computer Science",
+    major: "Computer Science & Public Policy",
     graduation: "2027"
   },
   {
@@ -211,7 +211,7 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="w-full flex flex-col justify-start items-center gap-10"><div class="w-full flex flex-row justify-between txt svelte-1cd5inn"><div class="w-full flex flex-col justify-center items-center gap-10 txt text-center svelte-1cd5inn">${validate_component(Fade, "Fade").$$render($$result, {}, {}, {
+  return `<div class="w-full flex flex-col justify-start items-center gap-10"><div class="w-full flex flex-row justify-between txt pt-16 svelte-1cd5inn"><div class="w-full flex flex-col justify-center items-center gap-10 txt text-center svelte-1cd5inn">${validate_component(Fade, "Fade").$$render($$result, {}, {}, {
     default: () => {
       return `<h1 class="h1 font-bold pt-20" data-svelte-h="svelte-5587uh">OUR MEMBERS</h1>`;
     }

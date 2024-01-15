@@ -30,6 +30,6 @@
 	}
 
 	.custom-shape-divider-bottom-1705252340 .shape-fill {
-		fill: #000000;
+		fill: rgba(var(--color-surface-900));
 	}
 </style>

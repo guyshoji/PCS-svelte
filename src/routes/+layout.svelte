@@ -69,7 +69,7 @@
 				<a href="/" class="w-1/6 flex text-center content-center relative z-40"
 					><img src="/pcs-logo.png" class="bg-white pcs-logo" alt="PCS Icon" />
 
-					<span class="text-xl dark:text-white font-semibold mx-4 m-auto">PCS@Berkeley</span>
+					<span class="text-xl dark:text-white font-semibold mx-4 m-auto">PCS @ Berkeley</span>
 				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="default"></svelte:fragment>
@@ -96,7 +96,7 @@
 			<a class="hover:font-normal dark:text-white p-3" href="/calendar"> <p>Calendar</p></a>
 			<a
 				class="btn variant-filled-primary"
-				href="https://docs.google.com/forms/d/e/1FAIpQLSdLTjL76KESHNkkE-H5BRoGimma8ja0H55lt1-8KsSIzirRdQ/viewform"
+				href="https://docs.google.com/forms/d/e/1FAIpQLSdlxeB7aDMPkHUXnDDHZGcB_OpDgPYVqu5dYh933HKwOiDK_w/viewform?usp=sf_link"
 				>Join Us</a
 			>
 		</div>
@@ -107,7 +107,7 @@
 			<img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg"
 				alt="Hosted by the OCF" style="border: 0;" />
 		</a>		
-		<h1 class="text-right dark:text-white m-3">© PCS Berkeley 2023</h1>
+		<h1 class="text-right dark:text-white m-3">© PCS Berkeley 2024</h1>
 	</div>
 </AppShell>
 

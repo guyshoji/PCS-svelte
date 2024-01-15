@@ -88,15 +88,15 @@ export const pcsTheme: CustomThemeConfig = {
 		"--color-error-800": "127 15 71", // #7f0f47
 		"--color-error-900": "104 12 58", // #680c3a
 		// surface | #0a000f 
-		"--color-surface-50": "5 0 7", // #dad9db
-		"--color-surface-100": "6 0 9", // #cecccf
+		"--color-surface-50": "9 1 17", // #dad9db
+		"--color-surface-100": "9 1 17", // #cecccf
 		"--color-surface-200": "8 0 11", // #c2bfc3
 		"--color-surface-300": "157 153 159", // #9d999f
-		"--color-surface-400": "40 33 40", // #544d57
-		"--color-surface-500": "25 23 25", // #0a000f
-		"--color-surface-600": "19 17 19", // #09000e
+		"--color-surface-400": "31 23 40", // #544d57
+		"--color-surface-500": "27 18 38", // #0a000f
+		"--color-surface-600": "19 14 24", // #09000e
 		"--color-surface-700": "8 0 11", // #08000b
-		"--color-surface-800": "6 0 9", // #060009
-		"--color-surface-900": "5 0 7", // #050007		
+		"--color-surface-800": "9 1 17", // #060009
+		"--color-surface-900": "9 1 17", // #050007		
 	}
 }

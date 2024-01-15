@@ -68,7 +68,7 @@
 			<h1 class="h1 font-bold">Who Are We?</h1>
 			<p class="p leading-10">
 				Political Computer Science @ Berkeley is a club dedicated to exploring interdisciplinary
-				work connecting the technology and political fields. Don't be fooled-- we have plenty of
+				work connecting the technology and political fields. Don't be fooled, we have plenty of
 				individuals with a strong tech background and host several web development/data science
 				project each semester, but we also have room for individuals to explore non-technical
 				projects relating to tech policy, and even code tools to help inform others about
@@ -94,7 +94,7 @@
 		<div>
 			<a
 				class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200"
-				href="/about">About Us</a
+				href="/calendar">Calendar</a
 			>
 		</div>
 	</div>

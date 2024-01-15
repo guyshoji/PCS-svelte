@@ -3,7 +3,7 @@
 	import { faInstagram, faMedium, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 </script>
 
-<div class="w-full flex flex-col justify-between pt-20 relative z-50 bg-surface-900">
+<div class="w-full flex flex-col justify-between pt-20 pb-5 relative z-50 bg-surface-900">
 	<div class="w-full bg-primary-700 h-px"></div>
 	<div class="flex container justify-evenly a">
 		<div class="flex flex-col gap-6 p-10 font-bold">
@@ -23,14 +23,14 @@
 		</div>
         <div class="flex flex-col gap-5 p-10">
             <p class="p font-bold">CONTACT</p>
-            <p class="p">pcsberkeley@gmail.com</p>
+            <a href="mailto:pcs.berkeley@gmail.com" class="p underline hover:text-primary-500 duration-200">pcs.berkeley@gmail.com</a>
             <p class="p">University of California, Berkeley</p>
             <p class="p">Berkeley, CA</p>
         </div>
 	</div>
 	<div class="w-full bg-primary-700 h-px"></div>
 	<div class="flex container justify-around pt-6">
-		<p class="p text-center">Copyright @ 2024 Political Computer Science @ Berkeley. All rights reserved</p>
+		<p class="p text-center">Copyright @ 2024 Political Computer Science @ Berkeley. All rights reserved.</p>
 		<div class="flex flex-row justify-center items-center gap-8">
 			<a href="https://www.instagram.com/pcs_berkeley/" target="blank">
 				<Fa class="h3 p-0 dark:text-white" icon={faInstagram} />

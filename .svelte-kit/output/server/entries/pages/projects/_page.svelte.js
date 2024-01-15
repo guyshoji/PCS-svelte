@@ -22,7 +22,7 @@ const projects = [
     description: "TBD"
   },
   {
-    name: "Caelyn's Project",
+    name: "Constitutional Law Text Analysis",
     projectManagers: [
       {
         name: "Caelyn Carlson",
@@ -129,14 +129,14 @@ const ProjectCard = create_ssr_component(($$result, $$props, $$bindings, slots) 
   })}</div> </div>`;
 });
 const css = {
-  code: ".smallHeader.svelte-jfaoe6{text-align:center;font-weight:bold}",
+  code: ".smallHeader.svelte-yuut0{text-align:center;font-weight:bold}@media(min-width: 1300px){.descriptionContainer.svelte-yuut0{flex-direction:row}}@media(max-width: 1300px){.descriptionContainer.svelte-yuut0{flex-direction:column}}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<div class="flex ab flex-col px-1/4 py-1/4 mt-36 gap-40 w-full">${validate_component(Fade, "Fade").$$render($$result, {}, {}, {
     default: () => {
-      return `<div class="flex flex-col gap-7 items-center" data-svelte-h="svelte-1s8gek3"><h4 class="h4 text-primary-500 smallHeader svelte-jfaoe6">Projects</h4>  <h1 class="text-6xl dark:text-white text-center font-bold">Our Projects System</h1> <div class="flex px-10 w-3/4"><p class="h5 text-secondary-500 dark:text-secondary-100 leading-10 text-center">Political Computer Science&#39;s projects system is quite special and different than many
+      return `<div class="flex flex-col gap-7 items-center" data-svelte-h="svelte-1s8gek3"><h4 class="h4 text-primary-500 smallHeader svelte-yuut0">Projects</h4>  <h1 class="text-6xl dark:text-white text-center font-bold">Our Projects System</h1> <div class="flex px-10 w-3/4"><p class="h5 text-secondary-500 dark:text-secondary-100 leading-10 text-center">Political Computer Science&#39;s projects system is quite special and different than many
 					similar clubs at Berkeley. We put a strong emphasis on growth in an area that an
 					individual wants to pursue, and we have opportunity for individual projects with the
 					support of experienced/senior members.<br><br>Read about our two project opportunities
@@ -144,7 +144,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })} ${validate_component(Fade, "Fade").$$render($$result, { visibleOnPageLoad: false }, {}, {
     default: () => {
-      return `<div class="flex flex-row p-10 gap-10 justify-around items-start" data-svelte-h="svelte-19q1baw"><div class="flex flex-col gap-10 justify-between items-center text-center flex-1 p-12"><h1 class="h1 font-bold">Projects</h1> <p class="leading-10">Our &quot;Projects&quot; are the standard type of projects you may imagine that a club might pursue
+      return `<div class="flex descriptionContainer p-10 gap-10 justify-around items-start svelte-yuut0" data-svelte-h="svelte-86991h"><div class="flex flex-col gap-10 justify-between items-center text-center flex-1 p-12"><h1 class="h1 font-bold">Projects</h1> <p class="leading-10">Our &quot;Projects&quot; are the standard type of projects you may imagine that a club might pursue
 					during a semester. We have 3 - 4 of these each semester and they range between highly
 					technical and extremely interdisciplinary. In the past, projects have included developing
 					full stack web applications, training complex models on geospatial data, performing text

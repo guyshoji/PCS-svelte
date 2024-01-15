@@ -19,7 +19,7 @@
 </script>
 
 <div class="w-full flex flex-col justify-start items-center gap-10">
-	<div class="w-full flex flex-row justify-between txt">
+	<div class="w-full flex flex-row justify-between txt pt-16">
 		<div class="w-full flex flex-col justify-center items-center gap-10 txt text-center">
 			<Fade>
 				<h1 class="h1 font-bold pt-20">OUR MEMBERS</h1>

@@ -28,7 +28,7 @@
 		</div>
 	</Fade>
 	<Fade visibleOnPageLoad={false}>
-		<div class="flex flex-row p-10 gap-10 justify-around items-start">
+		<div class="flex descriptionContainer p-10 gap-10 justify-around items-start">
 			<div class="flex flex-col gap-10 justify-between items-center text-center flex-1 p-12">
 				<h1 class="h1 font-bold">Projects</h1>
 				<p class="leading-10">
@@ -82,5 +82,16 @@
 	.smallHeader {
 		text-align: center;
 		font-weight: bold;
+	}
+
+	@media (min-width: 1300px) {
+		.descriptionContainer {
+			flex-direction: row;
+		}
+	}
+	@media (max-width: 1300px) {
+		.descriptionContainer {
+			flex-direction: column;
+		}
 	}
 </style>
