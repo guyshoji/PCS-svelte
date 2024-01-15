@@ -91,7 +91,7 @@
     },
     {
         "name": "Kailen Grottel-Brown",
-        "title": ["Member"],
+        "roles": ["Member"],
         "linkedin": "www.linkedin.com/in/kailen-gbrown",
         "img": "/Members/kailen-prof.jpeg",
         "imgSilly": "/Members/Kailen-silly.jpg",
@@ -100,7 +100,7 @@
     },
     {
         "name": "Emile Shah",
-        "title": ["Member"],
+        "roles": ["Member"],
         "linkedin": "https://www.linkedin.com/in/emile-shah/",
         "img": "/Members/emile-prof.jpg",
         "imgSilly": "/Members/emile-prof.jpg",
@@ -109,7 +109,7 @@
     },
     {
         "name": "Andrew Chen",
-        "title": ["Senior Member"],
+        "roles": ["Senior Member"],
         "linkedin": "https://www.linkedin.com/in/andrewchen04",
         "img": "/Members/andrew-prof.jpeg",
         "imgSilly": "/Members/andrew-prof.jpeg",
@@ -118,7 +118,7 @@
     },
     {
         "name": "Carolyn Wang",
-        "title": ["Member"],
+        "roles": ["Member"],
         "linkedin": "https://www.linkedin.com/in/carolyn-wang-jy/",
         "img": "/Members/carolyn-prof.jpg",
         "imgSilly": "/Members/carolyn-prof.jpg",
@@ -127,7 +127,7 @@
     },
     {
         "name": "Mark Verzhbinsky",
-        "title": ["Member"],
+        "roles": ["Member"],
         "linkedin": "https://www.linkedin.com/in/mark-verzhbinsky-920059232",
         "img": "/Members/mark-prof.jpeg",
         "imgSilly": "/Members/mark-prof.jpeg",
