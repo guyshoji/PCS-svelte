@@ -103,29 +103,42 @@
 			</div>
 		</div></Fade
 	>
-
-	<Fade visibleOnPageLoad={false}>
+<Fade visibleOnPageLoad={false}>
 		<div class="mt-48 flex flex-col gap-10">
 			<h1 class="h4 text-primary-500 smallHeader">Technologies we use</h1>
 			<div
 				class="flex flex-col gap-5
-	rounded-xl bg-surface-500 items-start hover:bg-primary-800
+	rounded-xl bg-surface-500  hover:bg-primary-800
 	flex-1 duration-300 overflow-hidden"
 			>
-				<div class="flex justify-end flex-col gap-6 p-8 h-full">
+				<div class="flex justify-center text-center flex-col gap-6 p-8 h-full">
 					<h3 class="p font-bold">
 						For those more technical inclined here are the main technologies we use
 					</h3>
-					<div class="flex flex-wrap gap-2 align-middle">
+					<h3 class="p text-left font-bold">Libraries</h3>
+					<div class="flex flex-wrap gap-2 m-auto">
 						<Icon icon="ri:svelte-fill" width="50" />
 						<Icon icon="mdi:react" width="50" />
+
 						<Icon icon="ri:supabase-fill" width="50" />
+						<Icon icon="simple-icons:pandas" width="50" />
+						<Icon icon="simple-icons:tensorflow" width="50" />
+						<Icon icon="skill-icons:expressjs-light" width="50" />
+					</div>
+					<h3 class="p text-left font-bold">Languages</h3>
+					<div class="flex flex-wrap gap-2 m-auto align-middle">
+						<Icon icon="cib:js" width="50" />
+						<Icon icon="cib:typescript" width="50" />
+						<Icon icon="cib:python" width="50" />
+						<Icon icon="cib:html5" width="50" />
+						<Icon icon="cib:css3-shiled" width="50" />
+						<Icon icon="cib:postgresql" width="50" />
 					</div>
 				</div>
 			</div>
-		</div>
-	</Fade>
-	<Footer />
+		</div></Fade
+	>
+		<Footer />
 </div>
 
 <style>
