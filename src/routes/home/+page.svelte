@@ -54,7 +54,7 @@
 				<div class="flex flex-row justify-center items-start gap-4">
 					<a
 						class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200"
-						href="https://docs.google.com/forms/d/e/1FAIpQLSdLTjL76KESHNkkE-H5BRoGimma8ja0H55lt1-8KsSIzirRdQ/viewform"
+						href="https://pcs-spring2024.carrd.co/"
 						>Join Us</a
 					>
 					<button

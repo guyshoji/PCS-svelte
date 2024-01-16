@@ -6,7 +6,7 @@
 				"name": "Divit Chopra",
 				"roles": ["Initiatives Chair", "Project Manager", "Member"],
 				"linkedin": "",
-				"img": "/pcs-logo.png",
+				"img": "/Members/divit-prof.jpg",
 				"imgSilly": "/group-pic.jpeg",
 				"major": "MET",
 				"graduation": "2027"
@@ -15,15 +15,15 @@
 		"description": "TBD"
 	},
 	{
-		"name": "Constitutional Law Text Analysis",
+		"name": "Ordered Liberty Lineage Analysis",
 		"projectManagers": [
 			{
 				"name": "Caelyn Carlson",
-				"roles": ["Project Manager", "Member"],
-				"linkedin": "",
-				"img": "/pcs-logo.png",
-				"imgSilly": "/group-pic.jpeg",
-				"major": "Rhetoric",
+				"roles": ["Project Manager", "Senior Member"],
+				"linkedin": "https://www.linkedin.com/in/caelyn-carlson",
+				"img": "/Members/caelyn-prof.jpg",
+				"imgSilly": "/Members/caelyn-prof.jpg",
+				"major": "Rhetoric & Political Science",
 				"graduation": "2024"
 			}
 		],
@@ -53,17 +53,19 @@
 		],
 		"description": "The Data Science Circle is a project that is run every year that helps members who don't have experience break into the world of Data Science with weekly topics covered that would normally be found in Data 100 and above. Members get to work in smaller groups to pursue a data analysis project on a dataset of their choice and will gain industry level experience in python, with some experience in R and SQL as well!"
 	},
-    {
-        "name": "Tech Policy Pentagon",
-        "projectManagers": [{
-            "name": "Billy Pierce",
-            "roles": ["Not Our President", "Project Manager", "Member"],
-            "linkedin": "",
-            "img": "/pcs-logo.png",
-            "imgSilly": "/group-pic.jpeg",
-            "major": "MET",
-            "graduation": "2024"
-        }],
-        "description": "The Tech Policy Pentagon is inspired by the Data Science Circle and new this semester. Members will have the opportunity to do a deep dive into tech policy in the US and abroad, and perform their own policy analysis project, presenting a deliverable of a policy proposal at the end of the semester!"
-    }
+	{
+		"name": "Tech Policy Pentagon",
+		"projectManagers": [
+			{
+				"name": "Billy Pierce",
+				"roles": ["Not Our President", "Project Manager", "Member"],
+				"linkedin": "",
+				"img": "/pcs-logo.png",
+				"imgSilly": "/group-pic.jpeg",
+				"major": "MET",
+				"graduation": "2024"
+			}
+		],
+		"description": "The Tech Policy Pentagon is inspired by the Data Science Circle and new this semester. Members will have the opportunity to do a deep dive into tech policy in the US and abroad, and perform their own policy analysis project, presenting a deliverable of a policy proposal at the end of the semester!"
+	}
 ]

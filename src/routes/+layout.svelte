@@ -64,7 +64,12 @@
 <AppShell>
 	<div class="bg-transparent absolute">
 		<!-- App Bar -->
-		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end" class="bg-transparent">
+		<AppBar
+			gridColumns="grid-cols-3"
+			slotDefault="place-self-center"
+			slotTrail="place-content-end"
+			class="bg-transparent"
+		>
 			<svelte:fragment slot="lead">
 				<a href="/" class="w-1/6 flex text-center content-center relative z-40"
 					><img src="/pcs-logo.png" class="bg-white pcs-logo" alt="PCS Icon" />
@@ -75,11 +80,14 @@
 			<svelte:fragment slot="default"></svelte:fragment>
 			<svelte:fragment slot="trail">
 				<LightSwitch />
-				<button class="btn card-hover  relative z-40" on:click={a}
+				<button class="btn card-hover relative z-40" on:click={a}
 					><Icon icon="ion:language-outline" class="dark:text-white" /></button
 				>
 				<button on:click={triggerDrawer}>
-					<Icon icon="material-symbols:density-medium-rounded" class="dark:text-white  relative z-40" />
+					<Icon
+						icon="material-symbols:density-medium-rounded"
+						class="dark:text-white  relative z-40"
+					/>
 				</button>
 			</svelte:fragment>
 		</AppBar>
@@ -94,19 +102,21 @@
 			<a class="hover:font-normal dark:text-white p-3" href="/members"> <p>Members</p></a>
 			<a class="hover:font-normal dark:text-white p-3" href="/editorials"> <p>Editorials</p></a>
 			<a class="hover:font-normal dark:text-white p-3" href="/calendar"> <p>Recruitment Info</p></a>
-			<a
-				class="btn variant-filled-primary"
-				href="https://docs.google.com/forms/d/e/1FAIpQLSdlxeB7aDMPkHUXnDDHZGcB_OpDgPYVqu5dYh933HKwOiDK_w/viewform?usp=sf_link"
-				>Join Us</a
-			>
+			<a class="btn variant-filled-primary" href="https://pcs-spring2024.carrd.co/">Join Us</a>
 		</div>
 	</Drawer>
 	<slot />
-	<div slot="footer" class="w-full flex flex-row justify-between items-center bg-surface-900 relative z-50 space-around">
+	<div
+		slot="footer"
+		class="w-full flex flex-row justify-between items-center bg-surface-900 relative z-50 space-around"
+	>
 		<a href="https://www.ocf.berkeley.edu" class="p-0">
-			<img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg"
-				alt="Hosted by the OCF" style="border: 0;" />
-		</a>		
+			<img
+				src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg"
+				alt="Hosted by the OCF"
+				style="border: 0;"
+			/>
+		</a>
 		<h1 class="text-right dark:text-white m-3">© PCS Berkeley 2024</h1>
 	</div>
 </AppShell>

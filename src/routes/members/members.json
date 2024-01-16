@@ -75,7 +75,7 @@
 		"name": "Divit Chopra",
 		"roles": ["Initiatives Chair", "Project Manager", "Member"],
 		"linkedin": "",
-		"img": "/pcs-logo.png",
+		"img": "/Members/divit-prof.jpg",
 		"imgSilly": "/group-pic.jpeg",
 		"major": "MET",
 		"graduation": "2027"
@@ -133,5 +133,14 @@
 		"imgSilly": "/Members/mark-prof.jpeg",
 		"major": "Political Science",
 		"graduation": "2025"
+	},
+	{
+		"name": "Caelyn Carlson",
+		"roles": ["Project Manager", "Senior Member"],
+		"linkedin": "https://www.linkedin.com/in/caelyn-carlson",
+		"img": "/Members/caelyn-prof.jpg",
+		"imgSilly": "/Members/caelyn-prof.jpg",
+		"major": "Rhetoric & Political Science",
+		"graduation": "2024"
 	}
 ]
