@@ -102,8 +102,8 @@
 			</div>
 		</div></Fade
 	>
-	<Footer />
 </div>
+<Footer />
 
 <style>
 	.smallHeader {

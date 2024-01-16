@@ -5,8 +5,16 @@
 	import Fade from '$lib/Fade.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import TiltDivider from '$lib/TiltDivider.svelte';
+	import Fa from 'svelte-fa';
+	import {
+		faGoogle,
+		faApple,
+		faAndroid,
+		faMicrosoft,
+		faCcVisa
+	} from '@fortawesome/free-brands-svg-icons';
 	import { onMount } from 'svelte';
-    import { goto } from '$app/navigation';
+	import { goto } from '$app/navigation';
 
 	let platitudes = [
 		'A community dedicated to diverse thought.',
@@ -15,6 +23,8 @@
 		'A community for everyone.',
 		'A community paving the path for ethical computing'
 	];
+
+	let memberDestinations = [faGoogle, faApple, faAndroid, faMicrosoft, faCcVisa];
 
 	let scrollToElement: HTMLDivElement;
 
@@ -86,6 +96,7 @@
 		</div>
 	</div>
 	<div class="flex flex-col gap-5 w-3/4 items-center justify-center text-center">
+        <div class="w-1/6 bg-primary-500 h-0.5 my-12"></div>
 		<h1 class="h1 font-bold pt-20 leading-10">Spring 2024 Recruitment</h1>
 		<p class="p leading-10">
 			Our Spring 2024 Recruitment Schedule is still TBA, but please visit our "Calendar" page for
@@ -96,6 +107,39 @@
 				class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200"
 				href="/calendar">Calendar</a
 			>
+		</div>
+	</div>
+</div>
+<div
+	class="flex flex-col gap-10 p-5 items-center justify-center text-center w-full z-50 relative bg-surface-900"
+>
+<div class="w-1/6 bg-primary-500 h-0.5 my-12"></div>
+
+	<h1 class="h1 font-bold">Why Join?</h1>
+	<div class="joinContainer flex">
+		<div class="flex flex-col gap-10 px-10 justify-start items-center text-center flex-1">
+			<h2 class="h2 font-bold">Our Culture</h2>
+			<p class="leading-10">
+				PCS strives to offer an inclusive, diverse, and interesting community. We host regular
+				workshops and are sure to discuss the important currents at meetings! Our socials are an
+				absolute blast, and through projects, initiatives, and more, we prepare our members well for
+				the future, giving them valuable mentorship and experience in both technical and
+				non-technical work!
+			</p>
+			<div>
+				<a
+					class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200"
+					href="/projects">Projects & Initiatives</a
+				>
+			</div>
+		</div>
+		<div class="flex-1 flex flex-col items-center justify-start text-center gap-5">
+			<h2 class="h2 font-bold">Where Our Members Go</h2>
+			<div class="flex flex-wrap p-5 gap-16">
+				{#each memberDestinations as destination}
+					<Fa class="h3 p-0 dark:text-white" icon={destination} />
+				{/each}
+			</div>
 		</div>
 	</div>
 </div>
@@ -177,6 +221,12 @@
 			font-size: 4.5rem;
 			line-height: 1.5;
 		}
+		.joinContainer {
+			flex-direction: row;
+		}
+		.destinationGrid {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
 	}
 	@media (max-width: 1200px) {
 		.text-image {
@@ -185,6 +235,12 @@
 		.pcsHeader {
 			font-size: 3rem;
 			line-height: 1.5;
+		}
+		.joinContainer {
+			flex-direction: column;
+		}
+		.destinationGrid {
+			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 </style>
