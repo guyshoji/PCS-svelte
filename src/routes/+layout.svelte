@@ -87,7 +87,7 @@
 	<!-- Page Route Content -->
 
 	<Drawer>
-		<div class="w-fit font-semibold flex flex-col p-3 relative z-50">
+		<div class="w-fit font-semibold flex flex-col p-3 relative drawer">
 			<a class="hover:font-normal dark:text-white p-3" href="/"> <p>Home</p></a>
 			<a class="hover:font-normal dark:text-white p-3" href="/about"> <p>About Us</p></a>
 			<a class="hover:font-normal dark:text-white p-3" href="/projects"> <p>Projects</p></a>
@@ -116,5 +116,8 @@
 		.pcs-logo {
 			display: none;
 		}
+	}
+	.drawer {
+		z-index: 2000;
 	}
 </style>

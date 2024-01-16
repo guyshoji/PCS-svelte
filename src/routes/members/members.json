@@ -12,7 +12,7 @@
         "name": "Rohit Jha",
         "roles": ["External Vice President", "Member"],
         "linkedin": "https://www.linkedin.com/in/rohitjha2003/",
-        "img": "/pcs-logo.png",
+        "img": "/Members/rohit-prof.jpg",
         "imgSilly": "/group-pic.jpeg",
         "major": "Computer Science, Data Science, Statistics",
         "graduation": "2025"
@@ -38,10 +38,10 @@
     {
         "name": "Carisma De Anda",
         "roles": ["Development Vice President", "Member"],
-        "linkedin": "",
-        "img": "/pcs-logo.png",
+        "linkedin": "www.linkedin.com/in/carisma-de-anda",
+        "img": "/Members/carisma-prof.png",
         "imgSilly": "/group-pic.jpeg",
-        "major": "",
+        "major": "Political Science & Data Science",
         "graduation": "2026"
     },
     {
@@ -82,7 +82,7 @@
     },
     {
         "name": "Billy Pierce",
-        "roles": ["Not Our President", "Project Manager", "Member"],
+        "roles": ["Project Manager", "Senior Member"],
         "linkedin": "",
         "img": "/pcs-logo.png",
         "imgSilly": "/group-pic.jpeg",

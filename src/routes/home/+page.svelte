@@ -121,7 +121,7 @@
 	<div class="w-1/6 bg-primary-500 h-0.5 mb-12"></div>
 
 	<h1 class="h1 font-bold">Why Join?</h1>
-	<div class="joinContainer flex">
+	<div class="joinContainer flex gap-10 items-center justify-center text-center">
 		<div class="flex flex-col gap-10 px-10 justify-start items-center text-center flex-1">
 			<h2 class="h2 font-bold">Our Culture</h2>
 			<p class="leading-10">
