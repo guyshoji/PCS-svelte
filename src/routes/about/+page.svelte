@@ -1,10 +1,11 @@
 <script>
-	import Fa from 'svelte-fa';
 	import IconCard from '$lib/IconCard.svelte';
 	import { faComputer, faLandmark, faHandshake, faUser } from '@fortawesome/free-solid-svg-icons';
 	import Fade from '$lib/Fade.svelte';
 	import EventCard from '$lib/EventCard.svelte';
 	import Footer from '$lib/Footer.svelte';
+
+	import Icon from '@iconify/svelte';
 
 	let iconCards = [
 		{
@@ -102,6 +103,28 @@
 			</div>
 		</div></Fade
 	>
+
+	<Fade visibleOnPageLoad={false}>
+		<div class="mt-48 flex flex-col gap-10">
+			<h1 class="h4 text-primary-500 smallHeader">Technologies we use</h1>
+			<div
+				class="flex flex-col gap-5
+	rounded-xl bg-surface-500 items-start hover:bg-primary-800
+	flex-1 duration-300 overflow-hidden"
+			>
+				<div class="flex justify-end flex-col gap-6 p-8 h-full">
+					<h3 class="p font-bold">
+						For those more technical inclined here are the main technologies we use
+					</h3>
+					<div class="flex flex-wrap gap-2 align-middle">
+						<Icon icon="ri:svelte-fill" width="50" />
+						<Icon icon="mdi:react" width="50" />
+						<Icon icon="ri:supabase-fill" width="50" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</Fade>
 	<Footer />
 </div>
 
