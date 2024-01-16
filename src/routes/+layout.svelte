@@ -93,7 +93,7 @@
 			<a class="hover:font-normal dark:text-white p-3" href="/projects"> <p>Projects</p></a>
 			<a class="hover:font-normal dark:text-white p-3" href="/members"> <p>Members</p></a>
 			<a class="hover:font-normal dark:text-white p-3" href="/editorials"> <p>Editorials</p></a>
-			<a class="hover:font-normal dark:text-white p-3" href="/calendar"> <p>Calendar</p></a>
+			<a class="hover:font-normal dark:text-white p-3" href="/calendar"> <p>Recruitment Info</p></a>
 			<a
 				class="btn variant-filled-primary"
 				href="https://docs.google.com/forms/d/e/1FAIpQLSdlxeB7aDMPkHUXnDDHZGcB_OpDgPYVqu5dYh933HKwOiDK_w/viewform?usp=sf_link"

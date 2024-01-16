@@ -12,7 +12,7 @@
 			<a class="hover:font-normal dark:text-white" href="/projects"> <p>Projects</p></a>
 			<a class="hover:font-normal dark:text-white" href="/members"> <p>Members</p></a>
 			<a class="hover:font-normal dark:text-white" href="/editorials"> <p>Editorials</p></a>
-			<a class="hover:font-normal dark:text-white" href="/calendar"> <p>Calendar</p></a>
+			<a class="hover:font-normal dark:text-white" href="/calendar"> <p>Recruitment Info</p></a>
 			<div>
 				<a
 				class="bg-primary-500 py-2 px-4 w-auto rounded-full"

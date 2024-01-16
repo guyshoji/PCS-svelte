@@ -95,17 +95,22 @@
 			<img src="/meetings.png" alt="General Meetings" />
 		</div>
 	</div>
-	<div class="flex flex-col gap-5 w-3/4 items-center justify-center text-center">
-        <div class="w-1/6 bg-primary-500 h-0.5 my-12"></div>
+	<div class="flex flex-col gap-10 w-3/4 items-center justify-center text-center">
+		<div class="w-1/6 bg-primary-500 h-0.5 mt-12"></div>
 		<h1 class="h1 font-bold pt-20 leading-10">Spring 2024 Recruitment</h1>
 		<p class="p leading-10">
-			Our Spring 2024 Recruitment Schedule is still TBA, but please visit our "Calendar" page for
-			updates and follow us on Instagram.
+			Spring 2024 recruitment has started, and applications will open soon! See the info below and
+			feel free to explore our virtual recruitment carrd, and feel free to fill out our interest form for updates!
 		</p>
-		<div>
+		<img src="/recruitment.png" alt="Recruitment card" />
+		<div class="flex flex-row gap-10">
 			<a
 				class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200"
-				href="/calendar">Calendar</a
+				href="https://pcs-spring2024.carrd.co/">Virtual Carrd</a
+			>
+            <a
+				class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200"
+				href="https://forms.gle/T37mbnapmyJXqgCf9">Interest Form</a
 			>
 		</div>
 	</div>
@@ -113,7 +118,7 @@
 <div
 	class="flex flex-col gap-10 p-5 items-center justify-center text-center w-full z-50 relative bg-surface-900"
 >
-<div class="w-1/6 bg-primary-500 h-0.5 my-12"></div>
+	<div class="w-1/6 bg-primary-500 h-0.5 mb-12"></div>
 
 	<h1 class="h1 font-bold">Why Join?</h1>
 	<div class="joinContainer flex">

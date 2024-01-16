@@ -1,10 +1,11 @@
 <script>
-	import Fa from 'svelte-fa';
 	import IconCard from '$lib/IconCard.svelte';
 	import { faComputer, faLandmark, faHandshake, faUser } from '@fortawesome/free-solid-svg-icons';
 	import Fade from '$lib/Fade.svelte';
 	import EventCard from '$lib/EventCard.svelte';
 	import Footer from '$lib/Footer.svelte';
+
+	import Icon from '@iconify/svelte';
 
 	let iconCards = [
 		{
@@ -102,6 +103,47 @@
 			</div>
 		</div></Fade
 	>
+	<Fade visibleOnPageLoad={false}>
+		<div class="mt-32 flex flex-col gap-50">
+			<h1 class="h4 text-primary-500 smallHeader">Technologies We Use</h1>
+			<div
+				class="flex flex-col gap-5
+	rounded-xl
+	flex-1 duration-300 overflow-hidden"
+			>
+				<div class="flex justify-center text-center flex-col gap-10 p-8">
+					<h3 class="p font-bold">
+						For those interested, here are some of the technologies we commonly use
+					</h3>
+					<div class="flex techContainer gap-10 justify-around items-center">
+						<div class="flex flex-col justify-center items-center text-center gap-10 px-10">
+							<h3 class="h3 font-bold">Libraries</h3>
+							<div class="flex flex-wrap justify-center gap-8 m-auto">
+								<Icon icon="ri:svelte-fill" width="50" />
+								<Icon icon="mdi:react" width="50" />
+
+								<Icon icon="ri:supabase-fill" width="50" />
+								<Icon icon="simple-icons:pandas" width="50" />
+								<Icon icon="simple-icons:tensorflow" width="50" />
+								<Icon icon="skill-icons:expressjs-light" width="50" />
+							</div>
+						</div>
+						<div class="flex flex-col justify-center items-center text-center gap-10 px-10">
+							<h3 class="h3 font-bold">Languages</h3>
+							<div class="flex flex-wrap justify-center gap-8 m-auto align-middle">
+								<Icon icon="cib:js" width="50" />
+								<Icon icon="cib:typescript" width="50" />
+								<Icon icon="cib:python" width="50" />
+								<Icon icon="cib:html5" width="50" />
+								<Icon icon="cib:css3-shiled" width="50" />
+								<Icon icon="cib:postgresql" width="50" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div></Fade
+	>
 </div>
 <Footer />
 
@@ -122,11 +164,17 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 		}
+		.techContainer {
+			flex-direction: column;
+		}
 	}
 	@media (min-width: 1000px) {
 		.cardsGrid {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+		.techContainer {
+			flex-direction: row;
 		}
 	}
 	@media (max-width: 580px) {
