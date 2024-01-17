@@ -15,7 +15,7 @@
 		"description": "TBD"
 	},
 	{
-		"name": "Ordered Liberty Lineage Analysis",
+		"name": "The Differing Systems of <i>Ordered Liberty</i>: A deep dive into 14th Amendment interpretation",
 		"projectManagers": [
 			{
 				"name": "Caelyn Carlson",
@@ -58,9 +58,9 @@
 		"projectManagers": [
 			{
 				"name": "Billy Pierce",
-				"roles": ["Not Our President", "Project Manager", "Member"],
-				"linkedin": "",
-				"img": "/pcs-logo.png",
+				"roles": ["Project Manager", "Senior Member"],
+				"linkedin": "https://www.linkedin.com/in/billwpierce/",
+				"img": "/Members/billy-prof.png",
 				"imgSilly": "/group-pic.jpeg",
 				"major": "MET",
 				"graduation": "2024"

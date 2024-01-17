@@ -25,7 +25,7 @@
 	class="flex justify-between align-center bg-surface-600 rounded-xl gap-10 p-10 w-full fullContainer"
 >
 	<div class={`flex flex-col justify-start align-left gap-10`}>
-		<h2 class="h2 font-bold">{name}</h2>
+		<h2 class="h2 font-bold">{@html name}</h2>
 		<h3 class="p">{description}</h3>
 	</div>
 	<div class={`flex justify-center align-right gap-10 ${pmClass}`}>
