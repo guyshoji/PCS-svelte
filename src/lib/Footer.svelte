@@ -15,22 +15,26 @@
 			<a class="hover:font-normal dark:text-white" href="/calendar"> <p>Recruitment Info</p></a>
 			<div>
 				<a
-				class="bg-primary-500 py-2 px-4 w-auto rounded-full"
-				href="https://docs.google.com/forms/d/e/1FAIpQLSdLTjL76KESHNkkE-H5BRoGimma8ja0H55lt1-8KsSIzirRdQ/viewform"
-				>Join Us</a
-			>
+					class="bg-primary-500 py-2 px-4 w-auto rounded-full"
+					href="https://pcs-spring2024.carrd.co/">Join Us</a
+				>
 			</div>
 		</div>
-        <div class="flex flex-col gap-5 p-10">
-            <p class="p font-bold">CONTACT</p>
-            <a href="mailto:pcs.berkeley@gmail.com" class="p underline hover:text-primary-500 duration-200">pcs.berkeley@gmail.com</a>
-            <p class="p">University of California, Berkeley</p>
-            <p class="p">Berkeley, CA</p>
-        </div>
+		<div class="flex flex-col gap-5 p-10">
+			<p class="p font-bold">CONTACT</p>
+			<a
+				href="mailto:pcs.berkeley@gmail.com"
+				class="p underline hover:text-primary-500 duration-200">pcs.berkeley@gmail.com</a
+			>
+			<p class="p">University of California, Berkeley</p>
+			<p class="p">Berkeley, CA</p>
+		</div>
 	</div>
 	<div class="w-full bg-primary-700 h-px"></div>
 	<div class="flex container justify-around pt-6">
-		<p class="p text-center">Copyright @ 2024 Political Computer Science @ Berkeley. All rights reserved.</p>
+		<p class="p text-center">
+			Copyright @ 2024 Political Computer Science @ Berkeley. All rights reserved.
+		</p>
 		<div class="flex flex-row justify-center items-center gap-8">
 			<a href="https://www.instagram.com/pcs_berkeley/" target="blank">
 				<Fa class="h3 p-0 dark:text-white" icon={faInstagram} />
