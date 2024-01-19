@@ -153,10 +153,10 @@
 <style>
 	@media screen and (min-width: 2200px) {
 		.animation {
-			top: 10vh;
+			top: 0;
 			right: 0;
-			width: 70%;
-			height: 80vh;
+			width: 100%;
+			height: 100vh;
 			overflow: hidden;
 			/*background: radial-gradient(circle at var(--radial-gradient-position), rgba(var(--color-secondary-800)), transparent 30%);*/
 		}
@@ -171,10 +171,10 @@
 	}
 	@media screen and (max-width: 2200px) and (min-width: 1500px) {
 		.animation {
-			top: 25vh;
+			top: 0;
 			right: 0;
-			width: 50%;
-			height: 50vh;
+			width: 100%;
+			height: 100vh;
 			overflow: hidden;
 			/*background: radial-gradient(circle at var(--radial-gradient-position), rgba(var(--color-secondary-800)), transparent 30%);*/
 		}
