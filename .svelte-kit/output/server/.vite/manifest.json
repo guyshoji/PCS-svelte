@@ -217,6 +217,7 @@
   "src/routes/+layout.ts": {
     "file": "entries/pages/_layout.ts.js",
     "imports": [
+      "_client.js",
       "_public.js"
     ],
     "isEntry": true,
