@@ -13,7 +13,7 @@ const projects = [
           "Member"
         ],
         linkedin: "",
-        img: "/pcs-logo.png",
+        img: "/Members/divit-prof.jpg",
         imgSilly: "/group-pic.jpeg",
         major: "MET",
         graduation: "2027"
@@ -22,18 +22,18 @@ const projects = [
     description: "TBD"
   },
   {
-    name: "Constitutional Law Text Analysis",
+    name: "The Differing Systems of <i>Ordered Liberty</i>: A deep dive into 14th Amendment interpretation",
     projectManagers: [
       {
         name: "Caelyn Carlson",
         roles: [
           "Project Manager",
-          "Member"
+          "Senior Member"
         ],
-        linkedin: "",
-        img: "/pcs-logo.png",
-        imgSilly: "/group-pic.jpeg",
-        major: "Rhetoric",
+        linkedin: "https://www.linkedin.com/in/caelyn-carlson",
+        img: "/Members/caelyn-prof.jpg",
+        imgSilly: "/Members/caelyn-prof.jpg",
+        major: "Rhetoric & Political Science",
         graduation: "2024"
       }
     ],
@@ -75,12 +75,11 @@ const projects = [
       {
         name: "Billy Pierce",
         roles: [
-          "Not Our President",
           "Project Manager",
-          "Member"
+          "Senior Member"
         ],
-        linkedin: "",
-        img: "/pcs-logo.png",
+        linkedin: "https://www.linkedin.com/in/billwpierce/",
+        img: "/Members/billy-prof.png",
         imgSilly: "/group-pic.jpeg",
         major: "MET",
         graduation: "2024"
@@ -90,7 +89,7 @@ const projects = [
   }
 ];
 const css$1 = {
-  code: "@media(max-width: 1080px){.fullContainer.svelte-1mlcq6z{flex-direction:column}.pm.svelte-1mlcq6z,.pms.svelte-1mlcq6z{flex-direction:column;max-width:100%}}@media(max-width: 1300px) and (min-width: 1080px){.fullContainer.svelte-1mlcq6z{flex-direction:row\n		}.pm.svelte-1mlcq6z{max-width:33.3%}.pms.svelte-1mlcq6z{max-width:66.7%}}@media(min-width: 1100px){.fullContainer.svelte-1mlcq6z{flex-direction:row}.pm.svelte-1mlcq6z{max-width:25%}.pms.svelte-1mlcq6z{max-width:50%}}",
+  code: "@media(max-width: 1080px){.fullContainer.svelte-1mlcq6z{flex-direction:column}.pm.svelte-1mlcq6z,.pms.svelte-1mlcq6z{flex-direction:column;max-width:100%}}@media(max-width: 1300px) and (min-width: 1080px){.fullContainer.svelte-1mlcq6z{flex-direction:row\r\n		}.pm.svelte-1mlcq6z{max-width:33.3%}.pms.svelte-1mlcq6z{max-width:66.7%}}@media(min-width: 1100px){.fullContainer.svelte-1mlcq6z{flex-direction:row}.pm.svelte-1mlcq6z{max-width:25%}.pms.svelte-1mlcq6z{max-width:50%}}",
   map: null
 };
 const ProjectCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -108,7 +107,7 @@ const ProjectCard = create_ssr_component(($$result, $$props, $$bindings, slots) 
   if ($$props.description === void 0 && $$bindings.description && description !== void 0)
     $$bindings.description(description);
   $$result.css.add(css$1);
-  return `<div class="flex justify-between align-center bg-surface-600 rounded-xl gap-10 p-10 w-full fullContainer svelte-1mlcq6z"><div class="${escape(null_to_empty(`flex flex-col justify-start align-left gap-10`), true) + " svelte-1mlcq6z"}"><h2 class="h2 font-bold">${escape(name)}</h2> <h3 class="p">${escape(description)}</h3></div> <div class="${escape(null_to_empty(`flex justify-center align-right gap-10 ${pmClass}`), true) + " svelte-1mlcq6z"}">${each(projectManagers, ({ name: name2, roles, linkedin, img, major, graduation }) => {
+  return `<div class="flex justify-between align-center bg-surface-600 rounded-xl gap-10 p-10 w-full fullContainer svelte-1mlcq6z"><div class="${escape(null_to_empty(`flex flex-col justify-start align-left gap-10`), true) + " svelte-1mlcq6z"}"><h2 class="h2 font-bold"><!-- HTML_TAG_START -->${name}<!-- HTML_TAG_END --></h2> <h3 class="p">${escape(description)}</h3></div> <div class="${escape(null_to_empty(`flex justify-center align-right gap-10 ${pmClass}`), true) + " svelte-1mlcq6z"}">${each(projectManagers, ({ name: name2, roles, linkedin, img, major, graduation }) => {
     return `${validate_component(MemberCard, "MemberCard").$$render(
       $$result,
       {

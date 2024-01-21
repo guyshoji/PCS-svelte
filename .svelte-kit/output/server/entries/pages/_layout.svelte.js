@@ -451,7 +451,7 @@ const LightSwitch = create_ssr_component(($$result, $$props, $$bindings, slots) 
   return `${$$result.head += `<!-- HEAD_svelte-gewkj4_START --><!-- HTML_TAG_START -->${`<script nonce="%sveltekit.nonce%">(${setInitialClassState.toString()})();<\/script>`}<!-- HTML_TAG_END --><!-- HEAD_svelte-gewkj4_END -->`, ""} <div class="${"lightswitch-track " + escape(classesTrack, true)}" role="switch" aria-label="Light Switch"${add_attribute("aria-checked", $modeCurrent, 0)}${add_attribute("title", title, 0)} tabindex="0"> <div class="${"lightswitch-thumb " + escape(classesThumb, true)}"> <svg class="${"lightswitch-icon " + escape(classesIcon, true)}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path${add_attribute("d", $modeCurrent ? svgPath.sun : svgPath.moon, 0)}></path></svg></div></div>`;
 });
 const css = {
-  code: "@media(max-width: 750px){.pcs-logo.svelte-1m7vizb{display:none}}",
+  code: "@media(max-width: 750px){.pcs-logo.svelte-ux4eti{display:none}}.drawer.svelte-ux4eti{z-index:2000}",
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -479,7 +479,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `${$$result.head += `<!-- HEAD_svelte-293o2g_START --><!-- HTML_TAG_START -->${`<script>${autoModeWatcher.toString()} autoModeWatcher();<\/script>`}<!-- HTML_TAG_END --><!-- HEAD_svelte-293o2g_END -->`, ""}  ${validate_component(AppShell, "AppShell").$$render($$result, {}, {}, {
     footer: () => {
-      return `<div slot="footer" class="w-full flex flex-row justify-between items-center bg-surface-900 relative z-50 space-around" data-svelte-h="svelte-e0tibt"><a href="https://www.ocf.berkeley.edu" class="p-0"><img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" style="border: 0;"></a> <h1 class="text-right dark:text-white m-3">© PCS Berkeley 2024</h1></div>`;
+      return `<div slot="footer" class="w-full flex flex-row justify-between items-center bg-surface-900 relative z-50 space-around" data-svelte-h="svelte-1o7tg9z"><a href="https://www.ocf.berkeley.edu" class="p-0"><img src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" style="border: 0;"></a> <h1 class="text-right dark:text-white m-3">© PCS Berkeley 2024</h1></div>`;
     },
     default: () => {
       return `<div class="bg-transparent absolute"> ${validate_component(AppBar, "AppBar").$$render(
@@ -512,12 +512,12 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             )}</button> `;
           },
           lead: () => {
-            return `<a href="/" class="w-1/6 flex text-center content-center relative z-40" data-svelte-h="svelte-pj3280"><img src="/pcs-logo.png" class="bg-white pcs-logo svelte-1m7vizb" alt="PCS Icon"> <span class="text-xl dark:text-white font-semibold mx-4 m-auto">PCS @ Berkeley</span></a>`;
+            return `<a href="/" class="w-1/6 flex text-center content-center relative z-40" data-svelte-h="svelte-pj3280"><img src="/pcs-logo.png" class="bg-white pcs-logo svelte-ux4eti" alt="PCS Icon"> <span class="text-xl dark:text-white font-semibold mx-4 m-auto">PCS @ Berkeley</span></a>`;
           }
         }
       )}</div>  ${validate_component(Drawer, "Drawer").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="w-fit font-semibold flex flex-col p-3 relative z-50" data-svelte-h="svelte-14enm6d"><a class="hover:font-normal dark:text-white p-3" href="/"><p>Home</p></a> <a class="hover:font-normal dark:text-white p-3" href="/about"><p>About Us</p></a> <a class="hover:font-normal dark:text-white p-3" href="/projects"><p>Projects</p></a> <a class="hover:font-normal dark:text-white p-3" href="/members"><p>Members</p></a> <a class="hover:font-normal dark:text-white p-3" href="/editorials"><p>Editorials</p></a> <a class="hover:font-normal dark:text-white p-3" href="/calendar"><p>Calendar</p></a> <a class="btn variant-filled-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdlxeB7aDMPkHUXnDDHZGcB_OpDgPYVqu5dYh933HKwOiDK_w/viewform?usp=sf_link">Join Us</a></div>`;
+          return `<div class="w-fit font-semibold flex flex-col p-3 relative drawer svelte-ux4eti" data-svelte-h="svelte-1icv0pc"><a class="hover:font-normal dark:text-white p-3" href="/"><p>Home</p></a> <a class="hover:font-normal dark:text-white p-3" href="/about"><p>About Us</p></a> <a class="hover:font-normal dark:text-white p-3" href="/projects"><p>Projects</p></a> <a class="hover:font-normal dark:text-white p-3" href="/members"><p>Members</p></a> <a class="hover:font-normal dark:text-white p-3" href="/editorials"><p>Editorials</p></a> <a class="hover:font-normal dark:text-white p-3" href="/calendar"><p>Recruitment Info</p></a> <a class="btn variant-filled-primary" href="https://pcs-spring2024.carrd.co/">Join Us</a></div>`;
         }
       })} ${slots.default ? slots.default({}) : ``}`;
     }

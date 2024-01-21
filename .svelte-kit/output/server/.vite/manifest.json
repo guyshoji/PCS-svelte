@@ -49,7 +49,7 @@
   },
   "_TiltDivider.svelte_svelte_type_style_lang.js": {
     "css": [
-      "_app/immutable/assets/TiltDivider.3xZkCWA2.css"
+      "_app/immutable/assets/TiltDivider.EPIgfJxo.css"
     ],
     "file": "chunks/TiltDivider.svelte_svelte_type_style_lang.js",
     "imports": [
@@ -79,10 +79,16 @@
     ]
   },
   "_internal.js": {
+    "dynamicImports": [
+      "src/hooks.server.ts"
+    ],
     "file": "chunks/internal.js",
     "imports": [
       "_ssr.js"
     ]
+  },
+  "_public.js": {
+    "file": "chunks/public.js"
   },
   "_ssr.js": {
     "file": "chunks/ssr.js"
@@ -180,9 +186,22 @@
     "isDynamicEntry": true,
     "src": "node_modules/svelte-typewriter/package/modes/scramble.js"
   },
+  "src/hooks.server.ts": {
+    "file": "chunks/hooks.server.js",
+    "imports": [
+      "_public.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/hooks.server.ts"
+  },
+  "src/routes/+layout.server.ts": {
+    "file": "entries/pages/_layout.server.ts.js",
+    "isEntry": true,
+    "src": "src/routes/+layout.server.ts"
+  },
   "src/routes/+layout.svelte": {
     "css": [
-      "_app/immutable/assets/_layout.0ZBudXNz.css"
+      "_app/immutable/assets/_layout.nbExaElU.css"
     ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
@@ -194,6 +213,14 @@
     ],
     "isEntry": true,
     "src": "src/routes/+layout.svelte"
+  },
+  "src/routes/+layout.ts": {
+    "file": "entries/pages/_layout.ts.js",
+    "imports": [
+      "_public.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+layout.ts"
   },
   "src/routes/+page.svelte": {
     "css": [
@@ -210,13 +237,14 @@
   },
   "src/routes/about/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.2PoOryh5.css",
+      "_app/immutable/assets/_page.seqZ8joh.css",
       "_app/immutable/assets/Footer.qgVQejMD.css"
     ],
     "file": "entries/pages/about/_page.svelte.js",
     "imports": [
       "_ssr.js",
-      "_Footer.js"
+      "_Footer.js",
+      "_Icon.js"
     ],
     "isEntry": true,
     "src": "src/routes/about/+page.svelte"
@@ -245,7 +273,8 @@
   },
   "src/routes/home/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.HfzDXS2r.css"
+      "_app/immutable/assets/_page.dJuEg1d_.css",
+      "_app/immutable/assets/Footer.qgVQejMD.css"
     ],
     "dynamicImports": [
       "node_modules/svelte-typewriter/package/modes/concurrent.js",

@@ -1,7 +1,8 @@
 import { c as create_ssr_component, v as validate_component, e as escape, a as add_attribute, i as each } from "../../../chunks/ssr.js";
-/* empty css                                                   */
 import { F as Fa, a as Fade, b as Footer } from "../../../chunks/Footer.js";
+/* empty css                                                   */
 import { faLandmark, faComputer, faHandshake, faUser } from "@fortawesome/free-solid-svg-icons";
+import { I as Icon } from "../../../chunks/Icon.js";
 const IconCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { icon } = $$props;
   let { header } = $$props;
@@ -30,7 +31,7 @@ const EventCard = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   return `<div class="flex flex-col gap-5 rounded-xl bg-surface-500 items-start hover:bg-primary-800 flex-1 duration-300 overflow-hidden"><div class="w-full"><img class="overflow-hidden"${add_attribute("src", img, 0)}${add_attribute("alt", title, 0)}></div> <div class="flex justify-end flex-col gap-6 px-8 pb-8 h-full"><h2 class="h3 dark:text-white font-bold">${escape(title)}</h2> <h3 class="p font-bold">${escape(timeInfo)}</h3> <p class="p">${escape(description)}</p></div> </div>`;
 });
 const css = {
-  code: ".smallHeader.svelte-rces83{text-align:center;font-weight:bold}@media(min-width: 1080px){.ab.svelte-rces83{margin-top:15%}}@media(max-width: 1000px){.cardsGrid.svelte-rces83{display:grid;grid-template-columns:1fr 1fr}}@media(min-width: 1000px){.cardsGrid.svelte-rces83{display:grid;grid-template-columns:1fr 1fr 1fr 1fr}}@media(max-width: 580px){.ab.svelte-rces83{margin-top:3rem}.cardsGrid.svelte-rces83{grid-template-columns:1fr}}",
+  code: ".smallHeader.svelte-1a5rpob{text-align:center;font-weight:bold}@media(min-width: 1080px){.ab.svelte-1a5rpob{margin-top:15%}}@media(max-width: 1000px){.cardsGrid.svelte-1a5rpob{display:grid;grid-template-columns:1fr 1fr}.techContainer.svelte-1a5rpob{flex-direction:column}}@media(min-width: 1000px){.cardsGrid.svelte-1a5rpob{display:grid;grid-template-columns:1fr 1fr 1fr 1fr}.techContainer.svelte-1a5rpob{flex-direction:row}}@media(max-width: 580px){.ab.svelte-1a5rpob{margin-top:3rem}.cardsGrid.svelte-1a5rpob{grid-template-columns:1fr}}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -83,9 +84,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   ];
   $$result.css.add(css);
-  return `<div class="flex ab flex-col px-10 svelte-rces83">${validate_component(Fade, "Fade").$$render($$result, {}, {}, {
+  return `<div class="flex ab flex-col px-10 svelte-1a5rpob">${validate_component(Fade, "Fade").$$render($$result, {}, {}, {
     default: () => {
-      return `<div class="flex flex-col gap-7" data-svelte-h="svelte-g1ahrh"> <h4 class="h4 text-primary-500 smallHeader svelte-rces83">About Us</h4> <h1 class="text-6xl text-center font-bold">Our Mission Statement</h1> <div class="flex px-10"><p class="h5 text-secondary-100 leading-10 text-center">Political Computer Science strives to better understand the intersection of policy and
+      return `<div class="flex flex-col gap-7" data-svelte-h="svelte-g1ahrh"> <h4 class="h4 text-primary-500 smallHeader svelte-1a5rpob">About Us</h4> <h1 class="text-6xl text-center font-bold">Our Mission Statement</h1> <div class="flex px-10"><p class="h5 text-secondary-100 leading-10 text-center">Political Computer Science strives to better understand the intersection of policy and
 					technology. From analyzing algorithmic bias to evaluating tech policy, our club recognizes
 					the imperfections within the tech industry and fosters conversations about how we can
 					become better computer scientists, data scientists, lawyers, and people. We are fueled by
@@ -93,17 +94,37 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })} ${validate_component(Fade, "Fade").$$render($$result, { visibleOnPageLoad: false }, {}, {
     default: () => {
-      return `<div class="mt-60 flex flex-col gap-10"><h1 class="h4 text-primary-500 smallHeader svelte-rces83" data-svelte-h="svelte-4t7s7w">A Space For Students to...</h1> <div class="cardsGrid p-4 gap-20 text-center svelte-rces83">${each(iconCards, ({ icon, header, message }) => {
+      return `<div class="mt-60 flex flex-col gap-10"><h1 class="h4 text-primary-500 smallHeader svelte-1a5rpob" data-svelte-h="svelte-4t7s7w">A Space For Students to...</h1> <div class="cardsGrid p-4 gap-20 text-center svelte-1a5rpob">${each(iconCards, ({ icon, header, message }) => {
         return `${validate_component(IconCard, "IconCard").$$render($$result, { icon, header, message }, {}, {})}`;
       })}</div></div>`;
     }
   })} ${validate_component(Fade, "Fade").$$render($$result, { visibleOnPageLoad: false }, {}, {
     default: () => {
-      return `<div class="mt-48 flex flex-col gap-10"><h1 class="h4 text-primary-500 smallHeader svelte-rces83" data-svelte-h="svelte-wj0jvv">Time Commitment</h1> <div class="cardsGrid p-4 gap-20 svelte-rces83">${each(eventCards, ({ img, title, timeInfo, description }) => {
+      return `<div class="mt-48 flex flex-col gap-10"><h1 class="h4 text-primary-500 smallHeader svelte-1a5rpob" data-svelte-h="svelte-wj0jvv">Time Commitment</h1> <div class="cardsGrid p-4 gap-20 svelte-1a5rpob">${each(eventCards, ({ img, title, timeInfo, description }) => {
         return `${validate_component(EventCard, "EventCard").$$render($$result, { img, title, timeInfo, description }, {}, {})}`;
       })}</div></div>`;
     }
-  })} ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})} </div>`;
+  })} ${validate_component(Fade, "Fade").$$render($$result, { visibleOnPageLoad: false }, {}, {
+    default: () => {
+      return `<div class="mt-32 flex flex-col gap-50"><h1 class="h4 text-primary-500 smallHeader svelte-1a5rpob" data-svelte-h="svelte-14oiy0m">Technologies We Use</h1> <div class="flex flex-col gap-5 rounded-xl flex-1 duration-300 overflow-hidden"><div class="flex justify-center text-center flex-col gap-10 p-8"><h3 class="p font-bold" data-svelte-h="svelte-1o0ipvr">For those interested, here are some of the technologies we commonly use</h3> <div class="flex techContainer gap-10 justify-around items-center svelte-1a5rpob"><div class="flex flex-col justify-center items-center text-center gap-10 px-10"><h3 class="h3 font-bold" data-svelte-h="svelte-1cah8la">Libraries</h3> <div class="flex flex-wrap justify-center gap-8 m-auto">${validate_component(Icon, "Icon").$$render($$result, { icon: "ri:svelte-fill", width: "50" }, {}, {})} ${validate_component(Icon, "Icon").$$render($$result, { icon: "mdi:react", width: "50" }, {}, {})} ${validate_component(Icon, "Icon").$$render($$result, { icon: "ri:supabase-fill", width: "50" }, {}, {})} ${validate_component(Icon, "Icon").$$render($$result, { icon: "simple-icons:pandas", width: "50" }, {}, {})} ${validate_component(Icon, "Icon").$$render(
+        $$result,
+        {
+          icon: "simple-icons:tensorflow",
+          width: "50"
+        },
+        {},
+        {}
+      )} ${validate_component(Icon, "Icon").$$render(
+        $$result,
+        {
+          icon: "skill-icons:expressjs-light",
+          width: "50"
+        },
+        {},
+        {}
+      )}</div></div> <div class="flex flex-col justify-center items-center text-center gap-10 px-10"><h3 class="h3 font-bold" data-svelte-h="svelte-1drgoxi">Languages</h3> <div class="flex flex-wrap justify-center gap-8 m-auto align-middle">${validate_component(Icon, "Icon").$$render($$result, { icon: "cib:js", width: "50" }, {}, {})} ${validate_component(Icon, "Icon").$$render($$result, { icon: "cib:typescript", width: "50" }, {}, {})} ${validate_component(Icon, "Icon").$$render($$result, { icon: "cib:python", width: "50" }, {}, {})} ${validate_component(Icon, "Icon").$$render($$result, { icon: "cib:html5", width: "50" }, {}, {})} ${validate_component(Icon, "Icon").$$render($$result, { icon: "cib:css3-shiled", width: "50" }, {}, {})} ${validate_component(Icon, "Icon").$$render($$result, { icon: "cib:postgresql", width: "50" }, {}, {})}</div></div></div></div></div></div>`;
+    }
+  })}</div> ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
 });
 export {
   Page as default

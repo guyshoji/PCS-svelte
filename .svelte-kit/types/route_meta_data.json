@@ -1,9 +1,32 @@
 {
-	"/": [],
-	"/about": [],
-	"/calendar": [],
-	"/editorials": [],
-	"/home": [],
-	"/members": [],
-	"/projects": []
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/about": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/calendar": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/editorials": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/home": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/members": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/projects": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	]
 }

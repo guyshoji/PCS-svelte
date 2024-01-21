@@ -144,7 +144,8 @@ declare module '$env/static/private' {
  * ```
  */
 declare module '$env/static/public' {
-	
+	export const PUBLIC_SUPABASE_ANON_KEY: string;
+	export const PUBLIC_SUPABASE_URL: string;
 }
 
 /**
@@ -288,6 +289,8 @@ declare module '$env/dynamic/private' {
  */
 declare module '$env/dynamic/public' {
 	export const env: {
+		PUBLIC_SUPABASE_ANON_KEY: string;
+		PUBLIC_SUPABASE_URL: string;
 		[key: `PUBLIC_${string}`]: string | undefined;
 	}
 }

@@ -110,13 +110,13 @@
 		slot="footer"
 		class="w-full flex flex-row justify-between items-center bg-surface-900 relative z-50 space-around"
 	>
-		<!--<a href="https://www.ocf.berkeley.edu" class="p-0">
+		<a href="https://www.ocf.berkeley.edu" class="p-0">
 			<img
 				src="http://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg"
 				alt="Hosted by the OCF"
 				style="border: 0;"
 			/>
-		</a>-->
+		</a>
 		<h1 class="text-right dark:text-white m-3">© PCS Berkeley 2024</h1>
 	</div>
 </AppShell>

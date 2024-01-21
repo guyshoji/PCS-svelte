@@ -9,7 +9,9 @@ import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { KTX2Loader } from "three/examples/jsm/loaders/KTX2Loader";
 import { OrbitControls as OrbitControls$1 } from "three/examples/jsm/controls/OrbitControls";
-import { a as Fade, b as Footer } from "../../../chunks/Footer.js";
+import { a as Fade, F as Fa, b as Footer } from "../../../chunks/Footer.js";
+/* empty css                                                   */
+import { faGoogle, faApple, faAndroid, faMicrosoft, faCcVisa } from "@fortawesome/free-brands-svg-icons";
 import "../../../chunks/client.js";
 const is_client = typeof window !== "undefined";
 let now = is_client ? () => window.performance.now() : () => Date.now();
@@ -957,7 +959,7 @@ const useRenderer = (ctx) => {
   };
 };
 const css$2 = {
-  code: "canvas.svelte-o3oskp{display:block}",
+  code: "canvas.svelte-1oju42t{display:block;z-index:20;position:fixed;top:0;left:0}",
   map: null
 };
 const Canvas = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1069,7 +1071,7 @@ const Canvas = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     contexts.ctx.toneMapping.set(toneMapping);
   }
   $$unsubscribe_initialized();
-  return `<canvas class="svelte-o3oskp"${add_attribute("this", canvas, 0)}>${$initialized ? `${validate_component(SceneGraphObject, "SceneGraphObject").$$render($$result, { object: contexts.ctx.scene }, {}, {
+  return `<canvas class="svelte-1oju42t"${add_attribute("this", canvas, 0)}>${$initialized ? `${validate_component(SceneGraphObject, "SceneGraphObject").$$render($$result, { object: contexts.ctx.scene }, {}, {
     default: () => {
       return `${slots.default ? slots.default({}) : ``}`;
     }
@@ -2060,7 +2062,7 @@ const TiltDivider = create_ssr_component(($$result, $$props, $$bindings, slots) 
   return `<div class="custom-shape-divider-bottom-1705252340 svelte-sohcrx" data-svelte-h="svelte-1ckxkif"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="svelte-sohcrx"><path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill svelte-sohcrx"></path></svg> </div>`;
 });
 const css = {
-  code: "@media screen and (min-width: 2200px){.animation.svelte-1ftqghe{top:10vh;right:0;width:70%;height:80vh;overflow:hidden}.typewriter.svelte-1ftqghe{width:30%;height:100vh;margin:0;position:relative;z-index:100}}@media screen and (max-width: 2200px) and (min-width: 1500px){.animation.svelte-1ftqghe{top:25vh;right:0;width:50%;height:50vh;overflow:hidden}.typewriter.svelte-1ftqghe{width:50%;height:100vh;position:relative;z-index:100}}@media screen and (max-width: 1500px){.animation.svelte-1ftqghe{top:0;right:0;width:100%;height:100vh;overflow:hidden}.typewriter.svelte-1ftqghe{width:100%;height:100vh;margin:0;position:relative;z-index:100}}.typewriter.svelte-1ftqghe{position:relative;width:100%;height:100vh;z-index:100}.animation.svelte-1ftqghe{position:relative;z-index:auto;pointer-events:none}@media(min-width: 1200px){.text-image.svelte-1ftqghe{flex-direction:row}.pcsHeader.svelte-1ftqghe{font-size:4.5rem;line-height:1.5}}@media(max-width: 1200px){.text-image.svelte-1ftqghe{flex-direction:column}.pcsHeader.svelte-1ftqghe{font-size:3rem;line-height:1.5}}",
+  code: "@media screen and (min-width: 2200px){.animation.svelte-14lgkoe{top:0;right:0;width:100%;height:100vh;overflow:hidden}.typewriter.svelte-14lgkoe{width:30%;height:100vh;margin:0;position:relative;z-index:100}}@media screen and (max-width: 2200px) and (min-width: 1500px){.animation.svelte-14lgkoe{top:0;right:0;width:100%;height:100vh;overflow:hidden}.typewriter.svelte-14lgkoe{width:50%;height:100vh;position:relative;z-index:100}}@media screen and (max-width: 1500px){.animation.svelte-14lgkoe{top:0;right:0;width:100%;height:100vh;overflow:hidden}.typewriter.svelte-14lgkoe{width:100%;height:100vh;margin:0;position:relative;z-index:100}}.typewriter.svelte-14lgkoe{position:relative;width:100%;height:100vh;z-index:100}.animation.svelte-14lgkoe{position:relative;z-index:auto;pointer-events:none}@media(min-width: 1200px){.text-image.svelte-14lgkoe{flex-direction:row}.pcsHeader.svelte-14lgkoe{font-size:4.5rem;line-height:1.5}.joinContainer.svelte-14lgkoe{flex-direction:row}}@media(max-width: 1200px){.text-image.svelte-14lgkoe{flex-direction:column}.pcsHeader.svelte-14lgkoe{font-size:3rem;line-height:1.5}.joinContainer.svelte-14lgkoe{flex-direction:column}}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -2071,29 +2073,44 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     "A community for everyone.",
     "A community paving the path for ethical computing"
   ];
+  let memberDestinations = [faGoogle, faApple, faAndroid, faMicrosoft, faCcVisa];
   let scrollToElement;
   $$result.css.add(css);
-  return `<div class="w-full h-screen absolute z-0"><div class="animation svelte-1ftqghe">${validate_component(Canvas, "Canvas").$$render($$result, {}, {}, {
+  return `<div class="w-full h-screen absolute z-0"><div class="animation svelte-14lgkoe">${validate_component(Canvas, "Canvas").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(SplashScene, "Scene").$$render($$result, {}, {}, {})}`;
     }
-  })}</div></div> <div class="w-full h-screen relative z-10"><div class="typewriter select-none flex flex-col gap-20 pl-16 justify-center items-center svelte-1ftqghe">${validate_component(Fade, "Fade").$$render($$result, {}, {}, {
+  })}</div></div> <div class="w-full h-screen relative z-10"><div class="typewriter select-none flex flex-col gap-20 pl-16 justify-center items-center svelte-14lgkoe">${validate_component(Fade, "Fade").$$render($$result, {}, {}, {
     default: () => {
-      return `<div class="flex flex-col gap-4 justify-center items-start text-left"><h1 class="pcsHeader dark:text-white font-bold svelte-1ftqghe" data-svelte-h="svelte-h6riut">Political Computer Science @ Berkeley</h1> ${validate_component(Typewriter, "Typewriter").$$render($$result, { mode: "loop", interval: 70 }, {}, {
+      return `<div class="flex flex-col gap-4 justify-center items-start text-left"><h1 class="pcsHeader dark:text-white font-bold svelte-14lgkoe" data-svelte-h="svelte-h6riut">Political Computer Science @ Berkeley</h1> ${validate_component(Typewriter, "Typewriter").$$render($$result, { mode: "loop", interval: 70 }, {}, {
         default: () => {
           return `${each(platitudes, (platitude) => {
             return `<h1 class="font-bold text-lg my-3 mr-3 ml-1 drop-shadow-xl">${escape(platitude)}</h1>`;
           })}`;
         }
-      })} <div class="flex flex-row justify-center items-start gap-4"><a class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" href="https://docs.google.com/forms/d/e/1FAIpQLSdLTjL76KESHNkkE-H5BRoGimma8ja0H55lt1-8KsSIzirRdQ/viewform" data-svelte-h="svelte-ch110a">Join Us</a> <button class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" data-svelte-h="svelte-118wphx">Learn More</button></div></div>`;
+      })} <div class="flex flex-row justify-center items-start gap-4"><a class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" href="https://pcs-spring2024.carrd.co/" data-svelte-h="svelte-1ontbbr">Join Us</a> <button class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" data-svelte-h="svelte-118wphx">Learn More</button></div></div>`;
     }
-  })}</div> ${validate_component(TiltDivider, "TiltDivider").$$render($$result, {}, {}, {})}</div> <div class="flex flex-col justify-center items-center text-center w-full relative bg-surface-900 z-50 gap-10 py-20"${add_attribute("this", scrollToElement, 0)} data-svelte-h="svelte-1ndjtf3"><div class="flex text-image justify-evenly gap-10 svelte-1ftqghe"><div class="flex flex-col gap-10 px-12 flex-1 text-center justify-center items-center"><h1 class="h1 font-bold">Who Are We?</h1> <p class="p leading-10">Political Computer Science @ Berkeley is a club dedicated to exploring interdisciplinary
+  })}</div> ${validate_component(TiltDivider, "TiltDivider").$$render($$result, {}, {}, {})}</div> <div class="flex flex-col justify-center items-center text-center w-full relative bg-surface-900 z-50 gap-10 py-20"${add_attribute("this", scrollToElement, 0)} data-svelte-h="svelte-varwa6"><div class="flex text-image justify-evenly gap-10 svelte-14lgkoe"><div class="flex flex-col gap-10 px-12 flex-1 text-center justify-center items-center"><h1 class="h1 font-bold">Who Are We?</h1> <p class="p leading-10">Political Computer Science @ Berkeley is a club dedicated to exploring interdisciplinary
 				work connecting the technology and political fields. Don&#39;t be fooled, we have plenty of
 				individuals with a strong tech background and host several web development/data science
 				project each semester, but we also have room for individuals to explore non-technical
 				projects relating to tech policy, and even code tools to help inform others about
-				government.</p> <div><a class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" href="/about">About Us</a></div></div> <div class="p-10 flex-1 flex flex-col justify-center items-center"><img src="/meetings.png" alt="General Meetings"></div></div> <div class="flex flex-col gap-5 w-3/4 items-center justify-center text-center"><h1 class="h1 font-bold pt-20 leading-10">Spring 2024 Recruitment</h1> <p class="p leading-10">Our Spring 2024 Recruitment Schedule is still TBA, but please visit our &quot;Calendar&quot; page for
-			updates and follow us on Instagram.</p> <div><a class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" href="/calendar">Calendar</a></div></div></div> ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
+				government.</p> <div><a class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" href="/about">About Us</a></div></div> <div class="p-10 flex-1 flex flex-col justify-center items-center"><img src="/meetings.png" alt="General Meetings"></div></div> <div class="flex flex-col gap-10 w-3/4 items-center justify-center text-center"><div class="w-1/6 bg-primary-500 h-0.5 mt-12"></div> <h1 class="h1 font-bold pt-20 leading-10">Spring 2024 Recruitment</h1> <p class="p leading-10">Spring 2024 recruitment has started, and applications will open soon! See the info below and
+			feel free to explore our virtual recruitment carrd, and feel free to fill out our interest form for updates!</p> <img src="/recruitment.png" alt="Recruitment card"> <div class="flex flex-row gap-10"><a class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" href="https://pcs-spring2024.carrd.co/">Virtual Carrd</a> <a class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" href="https://forms.gle/T37mbnapmyJXqgCf9">Interest Form</a></div></div></div> <div class="flex flex-col gap-10 p-5 items-center justify-center text-center w-full z-50 relative bg-surface-900"><div class="w-1/6 bg-primary-500 h-0.5 mb-12"></div> <h1 class="h1 font-bold" data-svelte-h="svelte-1e2gmsc">Why Join?</h1> <div class="joinContainer flex gap-10 items-center justify-center text-center svelte-14lgkoe"><div class="flex flex-col gap-10 px-10 justify-start items-center text-center flex-1" data-svelte-h="svelte-g39tje"><h2 class="h2 font-bold">Our Culture</h2> <p class="leading-10">PCS strives to offer an inclusive, diverse, and interesting community. We host regular
+				workshops and are sure to discuss the important currents at meetings! Our socials are an
+				absolute blast, and through projects, initiatives, and more, we prepare our members well for
+				the future, giving them valuable mentorship and experience in both technical and
+				non-technical work!</p> <div><a class="bg-primary-600 text-center font-bold flex cursor-pointer rounded-full px-4 py-2 hover:bg-primary-700 duration-200" href="/projects">Projects &amp; Initiatives</a></div></div> <div class="flex-1 flex flex-col items-center justify-start text-center gap-5"><h2 class="h2 font-bold" data-svelte-h="svelte-1uzmrka">Where Our Members Go</h2> <div class="flex flex-wrap p-5 gap-16">${each(memberDestinations, (destination) => {
+    return `${validate_component(Fa, "Fa").$$render(
+      $$result,
+      {
+        class: "h3 p-0 dark:text-white",
+        icon: destination
+      },
+      {},
+      {}
+    )}`;
+  })}</div></div></div></div> ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
 });
 export {
   Page as default

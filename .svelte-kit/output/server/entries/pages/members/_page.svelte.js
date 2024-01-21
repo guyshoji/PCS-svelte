@@ -23,7 +23,7 @@ const members = [
       "Member"
     ],
     linkedin: "https://www.linkedin.com/in/rohitjha2003/",
-    img: "/pcs-logo.png",
+    img: "/Members/rohit-prof.jpg",
     imgSilly: "/group-pic.jpeg",
     major: "Computer Science, Data Science, Statistics",
     graduation: "2025"
@@ -35,7 +35,7 @@ const members = [
       "Member"
     ],
     linkedin: "",
-    img: "/pcs-logo.png",
+    img: "/Members/Iman-prof.jpeg",
     imgSilly: "/group-pic.jpeg",
     major: "",
     graduation: "2025"
@@ -58,10 +58,10 @@ const members = [
       "Development Vice President",
       "Member"
     ],
-    linkedin: "",
-    img: "/pcs-logo.png",
+    linkedin: "www.linkedin.com/in/carisma-de-anda",
+    img: "/Members/carisma-prof.png",
     imgSilly: "/group-pic.jpeg",
-    major: "",
+    major: "Political Science & Data Science",
     graduation: "2026"
   },
   {
@@ -71,7 +71,7 @@ const members = [
       "Member"
     ],
     linkedin: "",
-    img: "/pcs-logo.png",
+    img: "/Members/anya-prof.jpg",
     imgSilly: "/group-pic.jpeg",
     major: "",
     graduation: "2027"
@@ -108,7 +108,7 @@ const members = [
       "Member"
     ],
     linkedin: "",
-    img: "/pcs-logo.png",
+    img: "/Members/divit-prof.jpg",
     imgSilly: "/group-pic.jpeg",
     major: "MET",
     graduation: "2027"
@@ -116,12 +116,11 @@ const members = [
   {
     name: "Billy Pierce",
     roles: [
-      "Not Our President",
       "Project Manager",
-      "Member"
+      "Senior Member"
     ],
-    linkedin: "",
-    img: "/pcs-logo.png",
+    linkedin: "https://www.linkedin.com/in/billwpierce/",
+    img: "/Members/billy-prof.png",
     imgSilly: "/group-pic.jpeg",
     major: "MET",
     graduation: "2024"
@@ -180,6 +179,29 @@ const members = [
     imgSilly: "/Members/mark-prof.jpeg",
     major: "Political Science",
     graduation: "2025"
+  },
+  {
+    name: "Caelyn Carlson",
+    roles: [
+      "Project Manager",
+      "Senior Member"
+    ],
+    linkedin: "https://www.linkedin.com/in/caelyn-carlson",
+    img: "/Members/caelyn-prof.jpg",
+    imgSilly: "/Members/caelyn-prof.jpg",
+    major: "Rhetoric & Political Science",
+    graduation: "2024"
+  },
+  {
+    name: "Abdullah Memon",
+    roles: [
+      "Member"
+    ],
+    linkedin: "https://www.linkedin.com/in/abdullah-memon-589996235/",
+    img: "/Members/abdullah-m-prof.jpg",
+    imgSilly: "/Members/abdullah-m-prof.jpg",
+    major: "Political Economy, Data Science (Minor)",
+    graduation: "2027"
   }
 ];
 const Counter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
