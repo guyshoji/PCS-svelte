@@ -15,6 +15,7 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
+			strict: 'false',
 			fallback: 'index.html'
 		}),
 		prerender: { entries: [] }
