@@ -12,7 +12,7 @@
 				"graduation": "2027"
 			}
 		],
-		"description": "TBD"
+		"description": "FoodWatch is aimed at creating a frequently updated, small scale food scarcity map software/webapp that derives its data from open-source satellite imagery. The project has three distinct parts: Frontend, Backend and ML/Data Acquisition. The Frontend part of the project is focused on implementing a zoomable map, rendering and manipulating an overlaid pixelated grid, and implementing user interactions. The Backend part of the project is focused on setting up a server with a neural network/ML model to handle HTTP requests for obtaining the corresponding predictions to pixels, and creating a database. This also includes hosting and deployment. The ML part of the project is quantifying the various affecting aspects affecting an areas food scarcity, creating and tweaking the specifics of the model on the basis of quantified input, and creating and output geotag and colour database."
 	},
 	{
 		"name": "The Differing Systems of <i>Ordered Liberty</i>: A deep dive into 14th Amendment interpretation",
@@ -27,7 +27,7 @@
 				"graduation": "2024"
 			}
 		],
-		"description": "TBD"
+		"description": "In Dobbs, the US Supreme Court reduced fundamental rights to those which are historical and “essential to ordered liberty,” allowing them to overturn Roe v. Wade, effectively taking away the right to decide to abort from individuals and giving it to the states. Since ordered liberty was incorporated (and effectively encapsulated) into the history-and-traditions Glucksberg test in 1997, it has been weaponized with the potential to take away more individual rights (see Justice Thomas’s concurring opinion in Dobbs). However, the subjective nature of ordered liberty, which assumes a ranked hierarchy of rights to maintain order and liberty, has produced variance in usage and interpretation since its introduction to constitutional law in 1937. How many versions of ordered liberty are there? Which kinds of ordered liberty have been used the most? How does court composition change the meaning of ordered liberty, if it does at all? What are the citational and interpretive lineages of the various ordered liberties, and why do some interpretations of an ordered liberty from a certain text diverge? The project will require bibliographic work, qualitative coding analysis of US Supreme Court opinions, some data science, and some writing."
 	},
 	{
 		"name": "Data Science Circle",

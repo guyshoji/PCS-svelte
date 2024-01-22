@@ -15,9 +15,9 @@
 		<div class="flex flex-col gap-7 items-center">
 			<h4 class="h4 text-primary-500 smallHeader">Projects</h4>
 			<!-- <img src="/group-pic.jpeg" class="m-auto absolute -z-10" /> -->
-			<h1 class="text-6xl dark:text-white text-center font-bold">Our Projects System</h1>
+			<h1 class="text-6xl text-white text-center font-bold">Our Projects System</h1>
 			<div class="flex px-10 w-3/4">
-				<p class="h5 text-secondary-500 dark:text-secondary-100 leading-10 text-center">
+				<p class="h5 text-secondary-100 leading-10 text-center">
 					Political Computer Science's projects system is quite special and different than many
 					similar clubs at Berkeley. We put a strong emphasis on growth in an area that an
 					individual wants to pursue, and we have opportunity for individual projects with the

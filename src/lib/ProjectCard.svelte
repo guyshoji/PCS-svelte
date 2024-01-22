@@ -26,7 +26,7 @@
 >
 	<div class={`flex flex-col justify-start align-left gap-10`}>
 		<h2 class="h2 font-bold">{@html name}</h2>
-		<h3 class="p">{description}</h3>
+		<h3 class="p leading-10">{description}</h3>
 	</div>
 	<div class={`flex justify-center align-right gap-10 ${pmClass}`}>
 		{#each projectManagers as { name, roles, linkedin, img, major, graduation }}
