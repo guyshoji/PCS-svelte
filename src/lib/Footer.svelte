@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Fa from 'svelte-fa';
-	import { faInstagram, faMedium, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+	import { faInstagram, faMedium, faLinkedin, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons';
 </script>
 
 <div class="w-full flex flex-col justify-between pt-20 pb-5 relative z-50 bg-surface-900">
@@ -44,6 +44,12 @@
 			</a>
 			<a href="https://www.linkedin.com/company/political-computer-science" target="blank">
 				<Fa class="h3 p-0 dark:text-white" icon={faLinkedin} />
+			</a>
+			<a href="https://github.com/PoliticalComputerScience" target="blank">
+				<Fa class="h3 p-0 dark:text-white" icon={faGithub} />
+			</a>
+			<a href="https://www.youtube.com/channel/UCCH2W56Oa8CNZcUTL2yeA2A" target="blank">
+				<Fa class="h3 p-0 dark:text-white" icon={faGithub} />
 			</a>
 		</div>
 	</div>
