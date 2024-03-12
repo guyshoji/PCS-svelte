@@ -142,13 +142,22 @@
 		"major": "Rhetoric & Political Science",
 		"graduation": "2024"
 	},
-    {
-        "name": "Abdullah Memon",
-        "roles": ["Member"],
-        "linkedin": "https://www.linkedin.com/in/abdullah-memon-589996235/",
-        "img": "/Members/abdullah-m-prof.jpg",
-        "imgSilly": "/Members/abdullah-m-prof.jpg",
-        "major": "Political Economy, Data Science (Minor)",
-        "graduation": "2027"
-    }
+    	{
+        	"name": "Abdullah Memon",
+        	"roles": ["Member"],
+        	"linkedin": "https://www.linkedin.com/in/abdullah-memon-589996235/",
+        	"img": "/Members/abdullah-m-prof.jpg",
+        	"imgSilly": "/Members/abdullah-m-prof.jpg",
+        	"major": "Political Economy, Data Science (Minor)",
+        	"graduation": "2027"
+    	},
+	{
+		"name": "Guy Shoji",
+        	"roles": ["Member"],
+        	"linkedin": "https://www.linkedin.com/in/guyshoji/",
+        	"img": "/Members/guy-shoji-prof.jpg",
+        	"imgSilly": "/Members/guy-shoji-prof.jpg",
+        	"major": "Philosophy, Computer Science",
+        	"graduation": "2026"
+	}
 ]
